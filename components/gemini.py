@@ -75,19 +75,21 @@ def validate_response(response_text: str) -> tuple[bool, str]:
 
 
 def call_gemini(messages: list, retry: int = 2) -> tuple[str, float]:
-    """
-    Calls the Gemini Flash API.
-    Args:
-        messages: list of {role, parts} dicts
-        retry: number of retries on rate limit
-    Returns:
-        (response_text, latency_seconds)
-    """
     model = get_gemini_model()
 
-    # Convert message list to Gemini chat history format
-    history = messages[:-1]   # All except last
-    last_message = messages[-1]["parts"][0]
+    # Fix roles: Gemini uses 'user' and 'model' (not 'assistant')
+    fixed_messages = []
+    for msg in messages:
+        role = msg["role"]
+        if role == "assistant":
+            role = "model"
+        fixed_messages.append({
+            "role": role,
+            "parts": msg["parts"]
+        })
+
+    history = fixed_messages[:-1]
+    last_message = fixed_messages[-1]["parts"][0]
 
     for attempt in range(retry + 1):
         try:
@@ -97,12 +99,11 @@ def call_gemini(messages: list, retry: int = 2) -> tuple[str, float]:
             latency = time.time() - start
             raw_text = response.text
 
-            # Post-response validation
             is_safe, final_text = validate_response(raw_text)
             return final_text, latency
 
         except Exception as e:
             if attempt < retry and "429" in str(e):
-                time.sleep(2 ** attempt)  # Exponential backoff
+                time.sleep(2 ** attempt)
                 continue
             raise e
