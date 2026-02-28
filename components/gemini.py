@@ -95,9 +95,4 @@ def call_gemini(messages: list, retries: int = 2):
             if attempt < retries and ("429" in err_str or "500" in err_str):
                 time.sleep(2 ** attempt)   # exponential backoff
                 continue
-            # Friendly fallback instead of raw error
-            return (
-                "⚠️ I'm temporarily unavailable due to a technical issue. "
-                "Please try again in a moment or contact **support@edtech.com** for help.",
-                0.0
-            )
+            raise e
