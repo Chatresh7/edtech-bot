@@ -1,302 +1,702 @@
 [
   {
-    "id": "kb-001", "category": "course",
-    "title": "Platform Overview",
-    "content": "Our EdTech platform offers self-paced and instructor-led courses across technology, business, and creative domains. Learners can access video lectures, readings, quizzes, and projects.",
-    "tags": ["overview", "platform"]
+    "id": "kb-001",
+    "category": "course",
+    "title": "Platform Overview and Mission",
+    "content": "Our EdTech platform is a comprehensive online learning ecosystem designed to bridge the gap between traditional education and modern skill requirements. We offer over 5000 courses across 50 domains including Technology, Business, Design, Healthcare, Finance, and Creative Arts. The platform serves learners from 150+ countries and supports 12 languages. Our mission is to make quality education accessible, affordable, and career-aligned for every learner globally.",
+    "tags": ["overview", "platform", "mission", "global"]
   },
   {
-    "id": "kb-002", "category": "course",
-    "title": "Course Enrollment Process",
-    "content": "To enroll, navigate to the course catalog, select a course, and click Enroll Now. Free courses are instantly accessible; paid courses require payment before access.",
-    "tags": ["enrollment", "access"]
+    "id": "kb-002",
+    "category": "course",
+    "title": "Course Enrollment Process - Step by Step",
+    "content": "Enrolling in a course involves these steps: Step 1 - Create or log into your account. Step 2 - Browse the course catalog using filters like category, level, duration, and rating. Step 3 - Click on a course to view its full details including syllabus, instructor bio, and learner reviews. Step 4 - Click 'Enroll Now'. Step 5 - For free courses, access begins immediately. Step 6 - For paid courses, complete payment via credit card, debit card, UPI, PayPal, or EMI options. Step 7 - Access the course from your 'My Learning' dashboard within 5 minutes of enrollment.",
+    "tags": ["enrollment", "access", "payment", "process"]
   },
   {
-    "id": "kb-003", "category": "course",
-    "title": "Course Structure",
-    "content": "Each course is divided into Modules, and each Module contains Lessons. A typical course has 4-10 modules with 3-8 lessons each, including videos, readings, and exercises.",
-    "tags": ["structure", "modules", "lessons"]
+    "id": "kb-003",
+    "category": "course",
+    "title": "Course Structure and Hierarchy",
+    "content": "Every course follows a structured hierarchy: Course → Sections → Modules → Lessons → Resources. A Course is the top-level learning program. Sections group related modules thematically. Modules are major topic units containing 3-8 lessons. Lessons are individual learning units (video, reading, or interactive). Resources include downloadable files, code repositories, datasets, and reference links. A typical course contains 4-8 sections, 20-40 modules, and 80-200 lessons depending on depth and complexity.",
+    "tags": ["structure", "hierarchy", "modules", "lessons", "sections"]
   },
   {
-    "id": "kb-004", "category": "course",
-    "title": "Self-Paced Learning",
-    "content": "Self-paced courses let learners study on their own schedule with no fixed deadlines unless a time-limited exam applies. Learners can pause and resume anytime.",
-    "tags": ["self-paced", "flexibility"]
+    "id": "kb-004",
+    "category": "course",
+    "title": "Self-Paced Learning Mode",
+    "content": "Self-paced courses offer maximum flexibility. Key features: No fixed start or end dates. Learn anytime, anywhere at your own speed. Pause mid-lesson and resume exactly where you left off. Set personal learning goals (daily/weekly). Access content for 12 months from enrollment date. No live sessions required. Ideal for working professionals, parents, or anyone with irregular schedules. Progress is auto-saved every 30 seconds. Offline downloads available on mobile app for learning without internet.",
+    "tags": ["self-paced", "flexibility", "offline", "schedule"]
   },
   {
-    "id": "kb-005", "category": "course",
-    "title": "Instructor-Led Courses",
-    "content": "Instructor-led courses follow a fixed weekly schedule with live sessions, assignment deadlines, and instructor interaction via discussion forums and office hours.",
-    "tags": ["instructor-led", "live", "schedule"]
+    "id": "kb-005",
+    "category": "course",
+    "title": "Instructor-Led Learning Mode",
+    "content": "Instructor-led courses provide structured, guided learning. Features include: Fixed cohort-based schedule with weekly modules released. Live sessions via integrated video conferencing every week. Real-time Q&A during live sessions. Assignment deadlines enforced (typically weekly). Direct instructor feedback on submissions. Peer collaboration and group projects. Cohorts of 20-100 learners. Duration ranges from 4 weeks to 6 months. Office hours: Instructors available 2-3 hours per week for personalized help.",
+    "tags": ["instructor-led", "live", "cohort", "schedule", "feedback"]
   },
   {
-    "id": "kb-006", "category": "course",
-    "title": "Video Lectures",
-    "content": "Video lectures are pre-recorded and on demand. Learners can pause, rewind, and replay. Transcripts and closed captions are available. Average video length is 5-15 minutes.",
-    "tags": ["video", "lecture"]
+    "id": "kb-006",
+    "category": "course",
+    "title": "Video Lecture System",
+    "content": "The video lecture system is built for optimal learning. Features: HD video quality (720p/1080p). Adjustable playback speed (0.5x to 2x). Chapter markers for easy navigation within videos. Auto-generated transcripts in 12 languages. Closed captions (CC) available for all videos. Picture-in-picture mode for multitasking. Night mode for reduced eye strain. Bookmark specific timestamps. Add personal notes at any timestamp. Average video length: 5-15 minutes (optimized for attention spans). Videos are streamed via CDN for fast loading globally.",
+    "tags": ["video", "playback", "transcript", "captions", "speed"]
   },
   {
-    "id": "kb-007", "category": "course",
-    "title": "Course Materials Access",
-    "content": "Once enrolled, all materials including videos, readings, and downloads are accessible from the My Learning dashboard. Materials remain available for 1 year post-enrollment unless stated otherwise.",
-    "tags": ["materials", "dashboard", "access"]
+    "id": "kb-007",
+    "category": "course",
+    "title": "Course Materials and Resources",
+    "content": "Each course provides comprehensive learning materials. Types of resources: Downloadable PDF lecture notes and slides. Jupyter notebooks for data science and ML courses. Code repositories linked via GitHub integration. Datasets for practice projects. Reading lists with curated articles and papers. Cheat sheets and quick reference cards. Project starter templates. All materials are accessible from the Resources tab within each module. Materials remain available for 12 months post-enrollment. Premium members get lifetime access to downloaded materials.",
+    "tags": ["materials", "resources", "PDF", "code", "download"]
   },
   {
-    "id": "kb-008", "category": "course",
-    "title": "Course Prerequisites",
-    "content": "Some courses list prerequisites on their course page. Prerequisites are advisory not technically enforced but strongly recommended for best learning outcomes.",
-    "tags": ["prerequisites", "requirements"]
+    "id": "kb-008",
+    "category": "course",
+    "title": "Course Prerequisites and Skill Levels",
+    "content": "Courses are categorized by skill level: Beginner - No prior knowledge required, starts from fundamentals. Intermediate - Assumes basic domain knowledge, moves faster. Advanced - Requires solid foundation, covers complex topics. Expert - For professionals seeking mastery. Prerequisites are listed on the course page under 'Requirements'. The platform offers a Skill Assessment Quiz before enrollment to check readiness. If prerequisites are not met, the system recommends prerequisite courses. Skill level badges are displayed on your profile after course completion.",
+    "tags": ["prerequisites", "skill level", "beginner", "advanced", "assessment"]
   },
   {
-    "id": "kb-009", "category": "course",
-    "title": "Discussion Forums",
-    "content": "Each course has a discussion forum where learners ask questions and collaborate. Instructors and TAs monitor forums and respond within 48 hours.",
-    "tags": ["forum", "discussion", "community"]
+    "id": "kb-009",
+    "category": "course",
+    "title": "Discussion Forums and Community",
+    "content": "The discussion forum is a vibrant learning community. Features: Course-specific forums organized by module and lesson. Upvote helpful answers (Stack Overflow style). Tag questions by topic. Attach screenshots and code snippets. @mention instructors or peers. Instructors respond within 24-48 hours. Top contributors earn Community Badges. Weekly 'Ask Me Anything' threads with instructors. Global leaderboard for most helpful community members. Private messaging between enrolled learners. Forum activity counts toward engagement score.",
+    "tags": ["forum", "discussion", "community", "Q&A", "badges"]
   },
   {
-    "id": "kb-010", "category": "course",
-    "title": "Course Ratings and Reviews",
-    "content": "After completing a course, learners can rate it from 1 to 5 stars and write a review. Ratings are visible on the course listing page and help future learners decide.",
-    "tags": ["rating", "review", "feedback"]
+    "id": "kb-010",
+    "category": "course",
+    "title": "Course Ratings, Reviews and Quality Control",
+    "content": "The platform maintains strict quality standards. Rating system: 1-5 star ratings collected after 30% course completion. Written reviews submitted after course completion. Ratings broken down by: Content Quality, Instructor Clarity, Practical Value, and Up-to-dateness. Courses below 3.5 stars are flagged for review. Instructors with consistently low ratings undergo mandatory content revision. Top-rated courses earn 'Platform Pick' or 'Learner Favorite' badges. Reviews are verified (only enrolled learners can review). Fake review detection system in place.",
+    "tags": ["rating", "review", "quality", "feedback", "stars"]
   },
   {
-    "id": "kb-011", "category": "assessment",
-    "title": "Types of Assessments",
-    "content": "The platform has four assessment types: Practice Quizzes which are ungraded self-checks, Graded Quizzes which are scored and count toward grade, Assignments which are peer or instructor reviewed, and Final Exams which are required for certification.",
-    "tags": ["assessment", "quiz", "exam", "assignment"]
+    "id": "kb-011",
+    "category": "course",
+    "title": "Course Search and Discovery",
+    "content": "Finding the right course is easy with our discovery system. Search features: Full-text search with autocomplete. Filter by: Category, Subcategory, Level, Duration, Price, Rating, Language, Certificate type. Sort by: Most Popular, Highest Rated, Newest, Price. AI-powered personalized recommendations based on learning history. 'Learners Also Enrolled In' suggestions. Career path recommendations (e.g., 'To become a Data Scientist, take these 5 courses'). Wishlist feature to save courses for later. Course preview available (first 2 lessons free).",
+    "tags": ["search", "discovery", "filter", "recommendation", "AI"]
   },
   {
-    "id": "kb-012", "category": "assessment",
-    "title": "Practice Quizzes",
-    "content": "Practice quizzes are ungraded exercises at the end of lessons to help learners self-assess understanding. They can be retaken unlimited times with no penalty.",
-    "tags": ["practice", "quiz", "self-check"]
+    "id": "kb-012",
+    "category": "course",
+    "title": "Course Updates and Version Control",
+    "content": "All courses are kept current through a version control system. Update policy: Instructors must update courses every 6 months minimum. Major updates trigger a 'Course Updated' notification to enrolled learners. Learners can choose to restart from updated content or continue existing progress. New sections added to existing courses appear automatically in your dashboard. Course changelog available showing what was updated and when. If a course is discontinued, learners receive 90-day advance notice. Archived course content remains accessible for 6 months post-discontinuation.",
+    "tags": ["updates", "version", "changelog", "notification", "content"]
   },
   {
-    "id": "kb-013", "category": "assessment",
-    "title": "Graded Quizzes",
-    "content": "Graded quizzes are scored and contribute to your overall course grade. Each quiz has a time limit of typically 20-40 minutes and a limited number of attempts usually 2-3.",
-    "tags": ["graded", "quiz", "score"]
+    "id": "kb-013",
+    "category": "course",
+    "title": "Mobile Learning App",
+    "content": "The mobile app provides full learning capability on the go. Platform support: iOS (iPhone and iPad) and Android. Key features: Download lessons for offline viewing (up to 30 lessons at a time). Progress syncs instantly across all devices via cloud sync. Push notifications for deadlines, forum replies, and live sessions. Mobile-optimized video player with gesture controls. Offline quiz attempts sync when reconnected. Dark mode support. Voice search for course discovery. Accessibility features: font size adjustment, high contrast mode, screen reader compatibility.",
+    "tags": ["mobile", "app", "offline", "iOS", "Android", "sync"]
   },
   {
-    "id": "kb-014", "category": "assessment",
-    "title": "Quiz Attempt Policy",
-    "content": "Most graded quizzes allow 2-3 attempts. The highest score across attempts is recorded. A 24-hour cooling period may apply between attempts to encourage review.",
-    "tags": ["attempts", "policy", "quiz"]
+    "id": "kb-014",
+    "category": "course",
+    "title": "Course Withdrawal, Refund and Transfer Policy",
+    "content": "Refund and withdrawal rules: Full refund available within 7 days of enrollment if less than 20% of course is completed. Partial refund (50%) available between 7-14 days if less than 30% completed. No refund after 14 days or after 30%+ completion. Refunds processed within 5-7 business days to original payment method. Course transfer: You can transfer enrollment to a different course of equal or lesser value within 7 days. Annual subscription holders can swap courses freely. Certificate earned courses are non-refundable after certificate issuance.",
+    "tags": ["refund", "withdrawal", "transfer", "policy", "payment"]
   },
   {
-    "id": "kb-015", "category": "assessment",
-    "title": "Assignment Submission",
-    "content": "Assignments are submitted via the course portal. Accepted formats include PDF, DOCX, and ZIP files. Late submissions may receive a penalty as defined in the course syllabus.",
-    "tags": ["assignment", "submission", "deadline"]
+    "id": "kb-015",
+    "category": "course",
+    "title": "Subscription Plans and Pricing",
+    "content": "Platform access options: Free Plan - Access to 500+ free courses, community forums, basic certificates. Basic Plan ($9.99/month) - Access to 2000+ courses, downloadable resources, standard certificates. Pro Plan ($19.99/month) - Full catalog access (5000+ courses), offline downloads, priority support, professional certificates. Team Plan ($15/user/month, minimum 5 users) - All Pro features plus admin dashboard, progress reporting, custom learning paths. Annual plans offer 40% discount. Student discount: 50% off with valid student email. Financial aid available for eligible learners.",
+    "tags": ["subscription", "pricing", "plans", "free", "pro", "team"]
   },
   {
-    "id": "kb-016", "category": "assessment",
-    "title": "Peer Review Process",
-    "content": "Some assignments use peer review. Learners evaluate each other's submissions using a rubric provided by the instructor. Each submission receives 3 peer reviews and an average score.",
-    "tags": ["peer review", "rubric", "assignment"]
+    "id": "kb-016",
+    "category": "course",
+    "title": "Live Sessions and Webinars",
+    "content": "Live learning sessions enhance the experience. Session types: Weekly live lectures (instructor-led courses only). Live Q&A sessions open to all enrolled learners. Guest expert webinars (monthly, free for Pro members). Workshop sessions for hands-on practice. All live sessions are recorded and available within 2 hours post-session. Session reminders sent 24 hours and 1 hour before. Calendar integration with Google Calendar, Outlook, and Apple Calendar. Maximum session duration: 90 minutes. Raise hand feature for questions. Breakout rooms for group activities.",
+    "tags": ["live", "session", "webinar", "recording", "Q&A"]
   },
   {
-    "id": "kb-017", "category": "assessment",
-    "title": "Final Exam Format",
-    "content": "Final exams are timed auto-graded tests covering all course modules. They are typically 60-90 minutes long and allow only 1-2 attempts. Some are proctored online.",
-    "tags": ["final exam", "proctored", "timed"]
+    "id": "kb-017",
+    "category": "course",
+    "title": "Language Support and Localization",
+    "content": "The platform supports global learners. Language features: Platform UI available in 12 languages. Course content primarily in English. Subtitles available for 8000+ courses in Spanish, French, Hindi, Mandarin, Arabic, Portuguese, German, and Japanese. AI-powered subtitle translation for remaining courses. Dubbing available for top 500 courses in Hindi, Spanish, and Mandarin. Regional pricing adjusted for purchasing power parity. Currency support: USD, EUR, GBP, INR, BRL, and 15 more. Local payment methods: UPI, Paytm, PIX, iDEAL, and more.",
+    "tags": ["language", "subtitle", "translation", "localization", "currency"]
   },
   {
-    "id": "kb-018", "category": "assessment",
-    "title": "Passing Score Requirements",
-    "content": "The minimum passing score varies by course but is typically 70 percent. Some certification tracks require 80 percent or higher. Check the course syllabus for exact passing thresholds.",
-    "tags": ["passing score", "grade", "threshold"]
+    "id": "kb-018",
+    "category": "course",
+    "title": "Accessibility and Inclusive Learning",
+    "content": "The platform is designed to be inclusive for all learners. Accessibility features: WCAG 2.1 AA compliant. Screen reader compatible (NVDA, JAWS, VoiceOver). Keyboard navigation for all features. Adjustable font sizes (small to extra large). High contrast mode. Colorblind-friendly UI design. Closed captions on all videos. Audio descriptions for visual content. Extended time options for assessments (for learners with documented disabilities). Braille-compatible PDF downloads. Dedicated accessibility support team. Request accommodation via Settings > Accessibility > Request Support.",
+    "tags": ["accessibility", "WCAG", "screen reader", "inclusive", "disability"]
   },
   {
-    "id": "kb-019", "category": "assessment",
-    "title": "Grade Calculation",
-    "content": "Final grades are a weighted average: Quizzes count for 30 percent, Assignments count for 40 percent, and Final Exam counts for 30 percent. Weightings may differ per course so always check the syllabus.",
-    "tags": ["grade", "calculation", "weightage"]
+    "id": "kb-019",
+    "category": "course",
+    "title": "Bookmarking, Notes and Study Tools",
+    "content": "Built-in study tools boost learning efficiency. Features: Bookmark any video timestamp or reading paragraph. Add personal text notes at any point in a lesson. Highlight key text in reading materials. Flashcard creator - convert notes into flashcards for spaced repetition review. All notes and bookmarks synced across devices. Export notes as PDF or DOCX. Share notes with study group members. Smart study reminders based on spaced repetition algorithm. Note search across all courses. Integration with Notion and Google Docs for external note-taking.",
+    "tags": ["bookmark", "notes", "flashcard", "study tools", "highlight"]
   },
   {
-    "id": "kb-020", "category": "assessment",
-    "title": "Retaking Assessments",
-    "content": "If you fail a graded assessment you may retake it based on the attempt limit. For final exams a retake may require waiting 7 days and possibly re-enrolling in the course.",
-    "tags": ["retake", "fail", "reassessment"]
-  },
-  {
-    "id": "kb-021", "category": "assessment",
-    "title": "Academic Integrity Policy",
-    "content": "All assessments must be completed independently unless stated otherwise. Sharing quiz or exam questions externally is prohibited and may result in course removal or account ban.",
-    "tags": ["integrity", "policy", "rules"]
-  },
-  {
-    "id": "kb-022", "category": "assessment",
-    "title": "Proctored Exam Rules",
-    "content": "Proctored exams require a webcam, microphone, and a quiet environment. AI proctoring monitors activity during the exam. Notes and external resources are not permitted.",
-    "tags": ["proctored", "webcam", "exam rules"]
-  },
-  {
-    "id": "kb-023", "category": "certification",
-    "title": "Certification Overview",
-    "content": "Upon passing all assessments and completing all modules, learners earn a digital certificate of completion. Certificates are issued by the platform and optionally by partner institutions.",
-    "tags": ["certificate", "completion", "overview"]
-  },
-  {
-    "id": "kb-024", "category": "certification",
-    "title": "Certificate Eligibility",
-    "content": "To be eligible for a certificate learners must complete all required lessons, pass all graded quizzes, submit all assignments, and pass the final exam with the required score.",
-    "tags": ["eligibility", "certificate", "requirements"]
-  },
-  {
-    "id": "kb-025", "category": "certification",
-    "title": "Certificate Issuance Timeline",
-    "content": "Certificates are generated automatically within 24-48 hours after all requirements are met. Learners receive an email notification with a download link.",
-    "tags": ["issuance", "timeline", "certificate"]
-  },
-  {
-    "id": "kb-026", "category": "certification",
-    "title": "Certificate Download and Sharing",
-    "content": "Certificates can be downloaded as PDF from the My Certificates section of your profile. A shareable URL is also provided for LinkedIn and other professional networks.",
-    "tags": ["download", "share", "LinkedIn", "certificate"]
-  },
-  {
-    "id": "kb-027", "category": "certification",
-    "title": "Certificate Verification",
-    "content": "Each certificate has a unique ID and QR code. Employers and institutions can verify authenticity by entering the certificate ID on the verification portal.",
-    "tags": ["verify", "authenticity", "QR", "certificate"]
-  },
-  {
-    "id": "kb-028", "category": "certification",
-    "title": "Specialization Certificate",
-    "content": "Specialization tracks consist of 3-6 related courses. Completing all courses in a track earns a Specialization Certificate which carries more weight than individual course certificates.",
-    "tags": ["specialization", "track", "series"]
-  },
-  {
-    "id": "kb-029", "category": "certification",
-    "title": "Professional Certification Exams",
-    "content": "Some courses lead to industry-recognized certifications. These require separate proctored exams registered through third-party certification bodies such as AWS or Google Cloud.",
-    "tags": ["professional", "industry", "certification exam"]
-  },
-  {
-    "id": "kb-030", "category": "certification",
-    "title": "Certificate Expiry and Renewal",
-    "content": "Platform certificates of completion do not expire. However industry certifications such as AWS or Google Cloud may have validity periods and require periodic renewal.",
-    "tags": ["expiry", "renewal", "validity"]
-  },
-  {
-    "id": "kb-031", "category": "certification",
-    "title": "Re-certification Policy",
-    "content": "If a learner fails to pass the final exam within allowed attempts they must re-enroll after a 30-day waiting period. Re-enrollment fees may apply for paid courses.",
-    "tags": ["re-enroll", "fail", "retry", "certification"]
-  },
-  {
-    "id": "kb-032", "category": "progress",
-    "title": "Progress Tracking Overview",
-    "content": "The My Learning dashboard shows overall course completion percentage, module-by-module progress, and assessment scores. Progress is updated in real time as lessons are completed.",
-    "tags": ["progress", "dashboard", "tracking"]
-  },
-  {
-    "id": "kb-033", "category": "progress",
-    "title": "Lesson Completion Criteria",
-    "content": "A lesson is marked complete when the learner watches at least 90 percent of the video or reads all sections of a reading. Simply opening a lesson does not count as completion.",
-    "tags": ["lesson", "completion", "criteria"]
-  },
-  {
-    "id": "kb-034", "category": "progress",
-    "title": "Module Completion Criteria",
-    "content": "A module is marked complete when all its lessons are completed and any required quizzes are submitted. Optional exercises do not block module completion.",
-    "tags": ["module", "completion", "unlock"]
-  },
-  {
-    "id": "kb-035", "category": "progress",
-    "title": "Course Completion Percentage",
-    "content": "The course completion percentage is calculated as completed lessons plus submitted assessments divided by total lessons plus total assessments multiplied by 100. It is displayed on the dashboard.",
-    "tags": ["percentage", "calculation", "completion"]
-  },
-  {
-    "id": "kb-036", "category": "progress",
-    "title": "Streak and Learning Goals",
-    "content": "Learners can set daily or weekly learning goals such as 30 minutes per day. The platform tracks learning streaks and sends reminders if goals are missed.",
-    "tags": ["streak", "goal", "reminder", "habit"]
-  },
-  {
-    "id": "kb-037", "category": "progress",
-    "title": "Activity Log",
-    "content": "The Activity Log shows a history of lessons watched, quizzes taken, and assignments submitted with timestamps. It is accessible from the Profile Activity section.",
-    "tags": ["activity", "log", "history"]
-  },
-  {
-    "id": "kb-038", "category": "progress",
-    "title": "Certificates vs Progress",
-    "content": "Progress reflects content consumption while certificates reflect assessment performance. A learner can have 100 percent progress but still need to pass the final exam to earn a certificate.",
-    "tags": ["certificate", "progress", "difference"]
-  },
-  {
-    "id": "kb-039", "category": "progress",
-    "title": "Progress Reset Policy",
-    "content": "Progress cannot be manually reset by learners. If a course is significantly updated the platform may prompt learners to revisit new content without erasing prior progress.",
-    "tags": ["reset", "update", "content change"]
-  },
-  {
-    "id": "kb-040", "category": "progress",
-    "title": "Mobile Progress Sync",
-    "content": "Progress syncs across all devices in real time. Lessons completed on the mobile app are reflected immediately on the web dashboard and vice versa.",
-    "tags": ["mobile", "sync", "cross-device"]
-  },
-  {
-    "id": "kb-041", "category": "course",
-    "title": "Course Withdrawal and Refund",
-    "content": "Learners can withdraw from a course within 7 days of enrollment for a full refund if less than 20 percent of the course has been completed. After that no refunds are issued.",
-    "tags": ["refund", "withdrawal", "policy"]
-  },
-  {
-    "id": "kb-042", "category": "course",
-    "title": "Language and Subtitle Options",
-    "content": "Courses are offered primarily in English. Many courses include subtitles in Spanish, French, Hindi, and Mandarin. Subtitle language can be toggled in the video player settings.",
-    "tags": ["language", "subtitle", "accessibility"]
-  },
-  {
-    "id": "kb-043", "category": "assessment",
-    "title": "Feedback on Assessments",
-    "content": "After submitting a quiz or assignment learners receive automated feedback on incorrect answers explaining why an answer is wrong conceptually without revealing correct answers directly.",
-    "tags": ["feedback", "wrong answer", "explanation"]
-  },
-  {
-    "id": "kb-044", "category": "certification",
-    "title": "Employer Partnership Certificates",
-    "content": "Some certifications are co-branded with hiring partners. Completing these courses adds learners to a talent pool reviewed by partner companies for job opportunities.",
-    "tags": ["employer", "hiring", "partnership", "job"]
-  },
-  {
-    "id": "kb-045", "category": "progress",
-    "title": "Instructor Gradebook",
-    "content": "In instructor-led courses instructors can view each learner's grades, submission status, and overall progress via the Gradebook panel in their instructor dashboard.",
-    "tags": ["gradebook", "instructor", "view"]
-  },
-  {
-    "id": "kb-046", "category": "course",
-    "title": "Bookmarking and Notes",
-    "content": "Learners can bookmark any video timestamp or reading section and add personal notes. All bookmarks and notes are saved to the My Notes section of the profile.",
-    "tags": ["bookmark", "notes", "study"]
-  },
-  {
-    "id": "kb-047", "category": "assessment",
-    "title": "Assignment Plagiarism Check",
-    "content": "All submitted assignments are scanned by a plagiarism detection system. If plagiarism is detected above 20 percent the submission is flagged for instructor review and may be rejected.",
-    "tags": ["plagiarism", "assignment", "detection"]
-  },
-  {
-    "id": "kb-048", "category": "certification",
-    "title": "Certificate Name Correction",
-    "content": "The name on your certificate is taken from your profile. To correct a name on an already-issued certificate update your profile and submit a certificate reissuance request via support.",
-    "tags": ["name", "correction", "certificate reissue"]
-  },
-  {
-    "id": "kb-049", "category": "progress",
-    "title": "Completion Email Notification",
-    "content": "When a learner completes all modules and assessments an automatic congratulatory email is sent with a course completion summary and a link to download the certificate.",
-    "tags": ["email", "notification", "completion"]
-  },
-  {
-    "id": "kb-050", "category": "course",
+    "id": "kb-020",
+    "category": "course",
     "title": "Technical Support and Help Desk",
-    "content": "For technical issues such as video not loading, portal errors, or login problems learners can contact the Help Desk via live chat from 9am to 6pm or submit a support ticket. Response time is within 24 hours.",
-    "tags": ["support", "help desk", "technical issue"]
+    "content": "Comprehensive support is available for all learners. Support channels: Live chat support (available 9am-9pm in your timezone). Email support with 24-hour response guarantee. Community help forums for peer assistance. Video troubleshooting guides for common issues. System status page at status.platform.com. Issue categories: Video playback issues, Login and account problems, Payment and billing queries, Certificate download issues, Mobile app bugs. Priority support for Pro and Team plan members (2-hour response SLA). Escalation path: Chat > Email > Phone (Enterprise only).",
+    "tags": ["support", "help desk", "chat", "email", "troubleshooting"]
+  },
+  {
+    "id": "kb-021",
+    "category": "assessment",
+    "title": "Complete Assessment Framework Overview",
+    "content": "The platform uses a multi-layered assessment framework to measure learning comprehensively. Assessment types in order of weight: Knowledge Checks (ungraded, embedded in lessons), Practice Quizzes (ungraded, end of lessons), Graded Quizzes (scored, end of modules), Peer-Reviewed Assignments (scored, end of sections), Instructor-Graded Projects (scored, major milestones), Final Examination (scored, end of course). Each type serves a specific pedagogical purpose - from immediate recall checking to deep application of knowledge.",
+    "tags": ["assessment", "framework", "overview", "types", "grading"]
+  },
+  {
+    "id": "kb-022",
+    "category": "assessment",
+    "title": "Knowledge Checks - Inline Assessments",
+    "content": "Knowledge checks are micro-assessments embedded within lessons. Characteristics: Appear automatically during video lectures at key learning moments. Types: Multiple choice, True/False, Fill in the blank. Completely ungraded - no impact on course grade. Immediate feedback shown after answering. Purpose: Reinforce learning in the moment, check understanding before proceeding. Cannot be skipped in some courses (instructor setting). Learners can reattempt instantly. Results not stored in gradebook. Help identify weak areas for additional study.",
+    "tags": ["knowledge check", "inline", "micro-assessment", "ungraded"]
+  },
+  {
+    "id": "kb-023",
+    "category": "assessment",
+    "title": "Practice Quizzes - Detailed Guide",
+    "content": "Practice quizzes are self-assessment tools at the end of lessons. Key features: Completely ungraded with no grade impact. Unlimited retake attempts. Immediate answer feedback with explanations. Question types: MCQ, Multiple Select, True/False, Short Answer. Time limit: None (take as long as needed). Score shown immediately after completion. Detailed answer explanations for every question. Questions randomized each attempt to prevent memorization. Practice quiz scores shown in your personal analytics but not in official gradebook. Highly recommended before attempting graded quizzes.",
+    "tags": ["practice quiz", "ungraded", "self-assessment", "unlimited attempts"]
+  },
+  {
+    "id": "kb-024",
+    "category": "assessment",
+    "title": "Graded Quizzes - Rules and Policies",
+    "content": "Graded quizzes are official scored assessments. Rules: Contribute to overall course grade (typically 30% weight). Time limits: 20-60 minutes depending on quiz length. Attempt limits: 2-3 attempts maximum. Highest score across attempts is recorded. Cooling period between attempts: 24 hours for most quizzes. Questions randomly selected from a question bank each attempt (different questions each time). Open book policy unless explicitly stated as closed book. Cannot pause once started. Auto-submitted when time runs out. Score visible immediately after submission. Grade breakdown shown per question after final attempt.",
+    "tags": ["graded quiz", "attempts", "cooling period", "grade", "time limit"]
+  },
+  {
+    "id": "kb-025",
+    "category": "assessment",
+    "title": "Assignment Types and Submission Guidelines",
+    "content": "Assignments are practical application tasks. Types: Written reports and essays. Coding assignments (auto-graded via code execution engine). Data analysis projects (submit Jupyter notebooks). Design submissions (images, prototypes, mockups). Case study analyses. Business plans and proposals. Submission guidelines: Accepted formats: PDF, DOCX, PPTX, ZIP, IPYNB, MP4. Maximum file size: 500MB. Submit via the Assignment Portal in each module. Submit before deadline shown in your dashboard. Late submission policy: 10% penalty per day late, maximum 3 days late accepted. After 3 days, assignment locked.",
+    "tags": ["assignment", "submission", "file format", "deadline", "late policy"]
+  },
+  {
+    "id": "kb-026",
+    "category": "assessment",
+    "title": "Peer Review Assessment System",
+    "content": "Peer review develops critical evaluation skills. How it works: Step 1 - Submit your assignment before the deadline. Step 2 - System randomly assigns 3 peer submissions for you to review. Step 3 - Complete all 3 peer reviews within 7 days using the instructor-provided rubric. Step 4 - Your assignment receives 3 peer reviews from classmates. Step 5 - Final score = average of 3 peer scores. If a peer review is flagged as unfair, instructor moderates and may override. Failing to complete peer reviews results in grade penalty. Peer review calibration exercise provided to ensure consistent scoring.",
+    "tags": ["peer review", "rubric", "calibration", "average score", "moderation"]
+  },
+  {
+    "id": "kb-027",
+    "category": "assessment",
+    "title": "Instructor-Graded Projects",
+    "content": "Instructor-graded projects are major assessed milestones. Characteristics: Graded directly by instructor or trained teaching assistant. Detailed written feedback provided (not just a score). Turnaround time: 7-14 business days after submission deadline. Rubric shared before project start so expectations are clear. Grade components: Technical accuracy, Creativity/Innovation, Completeness, Presentation quality, Code quality (for technical projects). Resubmission allowed once if score below passing grade. Portfolio-worthy projects highlighted for LinkedIn sharing. Project showcase: Top projects featured on platform showcase gallery.",
+    "tags": ["instructor graded", "project", "feedback", "rubric", "resubmission"]
+  },
+  {
+    "id": "kb-028",
+    "category": "assessment",
+    "title": "Final Examination - Complete Guide",
+    "content": "Final exams are the culminating assessment for certification. Structure: Comprehensive coverage of all course modules. Duration: 60-120 minutes depending on course length. Question count: 40-100 questions. Types: MCQ, Case Studies, Short Answer, Scenario-based. Attempt limit: 1-2 attempts (specified per course). Passing score: Typically 70% (some certification tracks require 80%). Proctoring: Optional or mandatory depending on course (see Proctored Exam Guide). Results: Immediate for auto-graded. 48 hours for partially human-graded. Retake policy: 7-day waiting period between attempts. After 2 failed attempts, course re-enrollment required.",
+    "tags": ["final exam", "comprehensive", "passing score", "attempt limit", "results"]
+  },
+  {
+    "id": "kb-029",
+    "category": "assessment",
+    "title": "Proctored Examination System",
+    "content": "Proctored exams ensure assessment integrity. Technical requirements: Webcam (minimum 720p). Microphone. Stable internet (minimum 5 Mbps). Supported browsers: Chrome, Firefox, Edge (latest versions). Windows 10+, macOS 10.14+. Process: Step 1 - Schedule exam 24 hours in advance. Step 2 - Complete identity verification (government ID). Step 3 - Room scan via webcam before exam starts. Step 4 - AI proctoring monitors: eye movement, background noise, multiple faces, screen activity. Step 5 - Flags reviewed by human proctors within 24 hours. Rules: No notes, books, or external devices. Single monitor only. No leaving the camera frame. Violations result in exam cancellation.",
+    "tags": ["proctored", "webcam", "AI monitoring", "identity verification", "rules"]
+  },
+  {
+    "id": "kb-030",
+    "category": "assessment",
+    "title": "Grade Calculation and Weighting System",
+    "content": "Final course grades are calculated using weighted averages. Standard weighting: Graded Quizzes: 25%, Assignments: 35%, Projects: 15%, Final Exam: 25%. Some courses use custom weightings shown in the syllabus. Grade thresholds: A (90-100%), B (80-89%), C (70-79%), D (60-69%), F (below 60%). Passing grade for certificate: Minimum C (70%). Grade rounding: 0.5 and above rounds up. Incomplete grade: Available for medical/emergency situations (request within 7 days of incident). Grade dispute window: 14 days after final grade posted.",
+    "tags": ["grade", "weighting", "calculation", "thresholds", "GPA"]
+  },
+  {
+    "id": "kb-031",
+    "category": "assessment",
+    "title": "Academic Integrity and Honor Code",
+    "content": "Academic integrity is fundamental to our platform. Honor Code principles: All submitted work must be your own. Collaboration allowed only when explicitly permitted. Cite all external sources used. Do not share assessment questions externally. Do not use AI tools to complete assessments unless permitted. Violations and consequences: First offense - Warning and assignment zero. Second offense - Course removal, no refund. Third offense - Permanent account ban. Detection methods: Plagiarism detection software (Turnitin integration), Code similarity checkers, AI-generated content detectors, Behavioral analytics during proctored exams. Appeal process available within 14 days of disciplinary action.",
+    "tags": ["integrity", "honor code", "plagiarism", "consequences", "AI detection"]
+  },
+  {
+    "id": "kb-032",
+    "category": "assessment",
+    "title": "Assessment Feedback and Score Review",
+    "content": "Detailed feedback helps learners improve. Feedback types: Automated feedback on MCQ wrong answers (explains why incorrect conceptually, not reveals correct answer). Rubric-based feedback on assignments. Written comments from instructors on projects. Peer feedback from reviewers. Feedback delivery timeline: Quiz feedback - immediate. Assignment feedback - 7-14 days. Project feedback - 7-14 days. How to request re-grade: Navigate to Assessment > My Submissions > Request Review. Provide specific reason for re-grade request. Re-grade requests accepted within 14 days of grade posting. Re-grade may result in higher or lower score.",
+    "tags": ["feedback", "re-grade", "review", "score", "comments"]
+  },
+  {
+    "id": "kb-033",
+    "category": "assessment",
+    "title": "Coding Assessments and Auto-Grading",
+    "content": "Technical courses use specialized coding assessments. Platform features: Integrated browser-based IDE (no installation needed). Supports: Python, JavaScript, Java, C++, R, SQL, and 15 more languages. Auto-grading runs test cases against submitted code. Test cases: Visible test cases (shown to learner) and hidden test cases (graded). Partial credit for passing some but not all test cases. Code quality check: Checks for efficiency, readability, and best practices. Plagiarism detection: Code similarity checker across all submissions. Submission limit: 10 attempts for practice, 3 for graded. Time complexity and space complexity analysis provided in feedback.",
+    "tags": ["coding", "auto-grade", "IDE", "test cases", "Python", "JavaScript"]
+  },
+  {
+    "id": "kb-034",
+    "category": "assessment",
+    "title": "Assessment Scheduling and Time Management",
+    "content": "Managing assessment deadlines effectively. Deadline types: Soft deadlines (recommended dates, no penalty for missing). Hard deadlines (enforced, late penalty applies). Absolute deadlines (no submissions accepted after). Finding deadlines: Course dashboard shows all upcoming deadlines. Calendar view available in My Learning > Calendar. Email reminders: 7 days, 3 days, and 24 hours before hard deadlines. Deadline extension policy: Request extension up to 3 days before deadline via the Extension Request form. Extensions granted for medical, family emergency, or technical issues with documentation. Maximum extension: 7 days. Only 2 extension requests per course allowed.",
+    "tags": ["deadline", "extension", "schedule", "reminder", "calendar"]
+  },
+  {
+    "id": "kb-035",
+    "category": "assessment",
+    "title": "Plagiarism Detection System",
+    "content": "The platform uses multi-layered plagiarism detection. Detection systems: Text similarity: Turnitin integration checks against internet, published papers, and previous submissions. Code similarity: MOSS (Measure Of Software Similarity) for programming assignments. AI-generated content detection: GPTZero and custom models identify AI-written text. Thresholds: Below 15% similarity - Pass. 15-25% - Warning, manual review. Above 25% - Flagged as plagiarism. Process after flagging: Instructor notified and reviews flagged submission. Learner given 48 hours to respond. Panel decision within 7 days. Prevention tips: Always cite sources. Use quotation marks for direct quotes. Paraphrase in your own words. Submit original work only.",
+    "tags": ["plagiarism", "Turnitin", "similarity", "detection", "AI detection"]
+  },
+  {
+    "id": "kb-036",
+    "category": "certification",
+    "title": "Certificate Types and Hierarchy",
+    "content": "The platform offers multiple levels of certification. Certificate hierarchy from basic to advanced: Course Completion Certificate - Awarded for completing a single course. Specialization Certificate - Awarded for completing a curated series of 3-6 related courses. Professional Certificate - Industry-recognized credential requiring proctored exams. Executive Certificate - For leadership and management programs (requires cohort-based learning). Micro-credential / Badge - For completing specific skill modules. Degree Partnership - Some courses count toward accredited university degrees. Each certificate type has different requirements, recognition levels, and employer value.",
+    "tags": ["certificate types", "hierarchy", "specialization", "professional", "micro-credential"]
+  },
+  {
+    "id": "kb-037",
+    "category": "certification",
+    "title": "Certificate Eligibility Requirements",
+    "content": "Meeting all eligibility requirements is mandatory for certificate issuance. Standard requirements: Complete 100% of required lessons (optional lessons excluded). Submit all graded assignments. Pass all graded quizzes (minimum score per quiz varies). Complete peer reviews if applicable. Pass the final examination with minimum required score (typically 70%). Maintain academic integrity throughout the course. No active academic integrity violations. Course-specific requirements may include: Minimum engagement hours, Project submission and approval, Live session attendance (instructor-led courses). Check the Certificate tab in your course dashboard to track eligibility progress.",
+    "tags": ["eligibility", "requirements", "completion", "quiz", "final exam"]
+  },
+  {
+    "id": "kb-038",
+    "category": "certification",
+    "title": "Certificate Generation and Issuance Process",
+    "content": "Certificate issuance is automated and fast. Process timeline: Step 1 - All eligibility criteria automatically verified by system. Step 2 - Certificate generated with your name, course title, completion date, and unique ID. Step 3 - Email notification sent within 24-48 hours of meeting all requirements. Step 4 - Certificate available in My Profile > My Certificates. Step 5 - Download as PDF or access shareable link. Bulk certificate requests (for organizations): Submit via admin dashboard. Processing time: 48-72 hours for bulk orders. Certificate data includes: Learner name, Course name, Instructor name, Platform logo, Issue date, Unique verification ID, QR code.",
+    "tags": ["issuance", "process", "timeline", "email", "PDF"]
+  },
+  {
+    "id": "kb-039",
+    "category": "certification",
+    "title": "Certificate Download, Sharing and Display",
+    "content": "Sharing your achievement is easy with multiple options. Download options: High-resolution PDF (print-ready, A4 format). Digital badge (PNG format for email signatures). How to share: LinkedIn direct integration - Add to profile in one click. Shareable URL - Unique link to your verified certificate. Email sharing - Send directly from platform. Embed code for personal websites and portfolios. Social media: Share to LinkedIn, Twitter, Facebook with pre-written post templates. QR code on certificate links to verification page. Badge platforms: Integrates with Credly and Badgr for open badge standards. Certificate remains accessible in your account permanently.",
+    "tags": ["download", "share", "LinkedIn", "badge", "PDF", "social media"]
+  },
+  {
+    "id": "kb-040",
+    "category": "certification",
+    "title": "Certificate Verification System",
+    "content": "Employers can verify certificate authenticity instantly. Verification methods: Online portal: Visit verify.platform.com, enter certificate ID or scan QR code. API verification: Employers can integrate our verification API into their HR systems. Blockchain verification: Premium certificates use blockchain for tamper-proof verification. Information displayed on verification: Learner name, Course title and description, Completion date, Final grade achieved, Issuing institution, Course duration and curriculum summary. Verification is free and available 24/7. Certificate IDs are permanent and never reused. If certificate is lost, redownload from My Profile > My Certificates at any time.",
+    "tags": ["verification", "QR code", "blockchain", "employer", "portal"]
+  },
+  {
+    "id": "kb-041",
+    "category": "certification",
+    "title": "Specialization Certificate Program",
+    "content": "Specialization programs offer deeper credential recognition. Structure: 3-6 carefully curated courses covering a comprehensive skill domain. A capstone project integrating knowledge from all courses in the specialization. Specialization certificate awarded only after all component courses AND capstone are complete. Examples: Data Science Specialization (5 courses + capstone), Full Stack Web Development (4 courses + capstone), Digital Marketing Professional (3 courses + capstone). Benefits: Demonstrates deep domain expertise, Higher employer recognition than individual course certificates, Featured in job boards partnered with platform, Average salary increase of 23% reported by specialization graduates.",
+    "tags": ["specialization", "capstone", "program", "domain", "career"]
+  },
+  {
+    "id": "kb-042",
+    "category": "certification",
+    "title": "Professional Certification Exam Preparation",
+    "content": "Industry-recognized certification preparation is comprehensive. Supported certifications: AWS (Cloud Practitioner, Solutions Architect), Google Cloud (Associate, Professional), Microsoft Azure, PMP (Project Management), CFA (Finance), CISSP (Cybersecurity), and 50+ more. Preparation includes: Aligned course content. Practice exam banks (500-1000 questions). Exam simulation with timed conditions. Weakness analysis and targeted practice. Study plans (4-12 weeks). Success rates: Platform learners pass at 15% higher rate than industry average. Exam vouchers available at discounted rates through platform partnerships. Exam registration guidance provided.",
+    "tags": ["professional certification", "AWS", "Google Cloud", "exam prep", "practice"]
+  },
+  {
+    "id": "kb-043",
+    "category": "certification",
+    "title": "Certificate Validity and Renewal Policy",
+    "content": "Understanding certificate validity periods. Platform completion certificates: Never expire. Represent what you achieved at time of completion. Professional/industry certifications: Validity varies by certifying body (typically 2-3 years). Renewal requirements: Continuing education credits, Re-examination, Portfolio submission. Platform support for renewal: Refresher courses flagged as 'Renewal Ready'. CPE (Continuing Professional Education) credit tracking. Renewal reminder notifications sent 6 months before expiry. Re-examination preparation courses. Certificate version history maintained - original certificate always preserved even if renewed. Expired professional certs still shown in profile with 'Expired' badge.",
+    "tags": ["validity", "renewal", "expiry", "CPE", "professional cert"]
+  },
+  {
+    "id": "kb-044",
+    "category": "certification",
+    "title": "Re-enrollment and Re-certification After Failure",
+    "content": "Failing doesn't mean the end - here's the path forward. After failing final exam: Attempt 1 failed - Review feedback, identify weak areas, retake after 7-day waiting period. Attempt 2 failed - Course re-enrollment required (30-day waiting period). Re-enrollment process: Access the original course listing. Click 'Re-enroll'. Progress from previous enrollment preserved for reference but not carried forward. Re-enrollment fees: Free if within 90 days of original enrollment. 50% fee if 90 days to 1 year. Full fee after 1 year. Academic support: After first failure, system auto-recommends targeted practice materials and weak area modules.",
+    "tags": ["re-enrollment", "failure", "retry", "waiting period", "support"]
+  },
+  {
+    "id": "kb-045",
+    "category": "certification",
+    "title": "Certificate Name, Details and Correction Process",
+    "content": "Ensuring your certificate information is accurate. Certificate displays: Your full name (from profile). Course/program title. Completion date. Unique certificate ID. Platform and instructor signatures. Before completing a course, verify your name in Profile > Personal Information. Name correction after certificate issued: Minor corrections (spelling errors) - Free, processed within 24 hours. Major corrections (full name change) - Requires legal documentation, processed within 5 business days. How to request: Support > Certificate Services > Name Correction Request. Include: Certificate ID, Current incorrect name, Correct name, Supporting document (if major correction). Old certificate revoked and new one issued with correction note.",
+    "tags": ["name correction", "certificate details", "profile", "correction request"]
+  },
+  {
+    "id": "kb-046",
+    "category": "certification",
+    "title": "Employer Partnership and Career Services",
+    "content": "Certifications connect learners to career opportunities. Employer network: 500+ partner companies actively recruit from platform. Industries: Technology, Finance, Healthcare, Marketing, Data Science, Design. Career services for certificate holders: Resume review by career coaches. LinkedIn profile optimization. Job matching algorithm based on certificates earned. Direct referral to partner company recruiters. Salary insights for certified professionals. Interview preparation resources. Talent pool: Upon earning Professional or Specialization certificates, opt into Talent Pool (with consent). Recruiters can find your profile. Average time to job placement: 3-6 months for active job seekers with professional certificates.",
+    "tags": ["employer", "career", "job placement", "recruiter", "talent pool"]
+  },
+  {
+    "id": "kb-047",
+    "category": "certification",
+    "title": "University Credit and Academic Recognition",
+    "content": "Some platform courses carry academic credit. Credit transfer partnerships: 25+ partner universities accept platform course credits. Credits applicable toward degree programs in partner institutions. ACE Credit recommendations: Selected courses carry American Council on Education (ACE) credit recommendations. How to apply credits: Obtain official transcript from Platform > My Certificates > Request Transcript. Submit to university admissions or registrar. University evaluates and decides credit award. Maximum transferable credits vary by institution (typically 15-30 credits). Courses with credit recommendations clearly marked with 'ACE Recommended' badge on course page.",
+    "tags": ["university credit", "ACE", "transfer", "academic recognition", "transcript"]
+  },
+  {
+    "id": "kb-048",
+    "category": "progress",
+    "title": "Progress Tracking Dashboard Overview",
+    "content": "The My Learning dashboard is your central progress hub. Dashboard sections: Overview - Completion percentage, time spent, last accessed. Course Progress - Module-by-module completion status. Assessment Tracker - Quiz scores, assignment grades, final exam status. Learning Streak - Daily/weekly activity tracking. Goals - Personal learning targets and achievement. Achievements - Badges and milestones earned. Recommendations - Next steps and suggested courses. Analytics - Detailed learning analytics (time per module, quiz attempts, score trends). Mobile app shows condensed version with key metrics. Data updates in real-time as you complete activities.",
+    "tags": ["dashboard", "progress", "overview", "analytics", "tracker"]
+  },
+  {
+    "id": "kb-049",
+    "category": "progress",
+    "title": "Lesson and Module Completion Rules",
+    "content": "Completion is tracked precisely for accuracy. Lesson completion criteria: Video lessons: Must watch minimum 85% of video duration. Reading lessons: Must scroll through and spend minimum time based on word count (approx. 200 words per minute reading speed). Interactive lessons: Must complete all interactive elements. Quiz lessons: Must submit the quiz (any score counts for completion). Module completion: All required lessons within module must be completed. Optional lessons marked clearly and do not affect module completion. Module quiz must be submitted (graded quizzes must meet minimum score). Section completion: All modules within section completed. Course completion: All sections completed AND final exam passed.",
+    "tags": ["completion", "criteria", "video", "reading", "module", "section"]
+  },
+  {
+    "id": "kb-050",
+    "category": "progress",
+    "title": "Progress Percentage Calculation",
+    "content": "Understanding how your progress percentage is calculated. Formula: Progress % = (Completed weighted units / Total weighted units) x 100. Weighted units: Each video lesson = 1 unit. Each reading = 0.5 units. Each graded quiz = 2 units. Each assignment = 3 units. Final exam = 5 units. Example: Course with 50 video lessons (50 units), 10 readings (5 units), 5 quizzes (10 units), 2 assignments (6 units), 1 final exam (5 units) = 76 total units. Completing 50 videos + 10 readings + 5 quizzes = 65 units / 76 = 85.5% progress. Note: 100% progress does not mean certificate earned - final exam must also be passed.",
+    "tags": ["percentage", "calculation", "formula", "weighted", "units"]
+  },
+  {
+    "id": "kb-051",
+    "category": "progress",
+    "title": "Learning Streaks and Habit Building",
+    "content": "Streaks encourage consistent daily learning. How streaks work: A streak day is counted when you complete at least 1 lesson or assessment on that calendar day. Streak counter resets to 0 if you miss a full day. Streak freeze: 2 streak freezes available per month (automatically applied when you miss a day). Earn additional freeze by completing milestone achievements. Streak milestones and rewards: 7-day streak - Bronze badge. 30-day streak - Silver badge + 10% discount coupon. 100-day streak - Gold badge + 1 month free Pro subscription. 365-day streak - Platinum badge + exclusive course access. Weekly learning goals: Set target of lessons per week. Dashboard shows progress toward weekly goal. Reminder notifications sent if falling behind.",
+    "tags": ["streak", "habit", "daily", "rewards", "badges", "goals"]
+  },
+  {
+    "id": "kb-052",
+    "category": "progress",
+    "title": "Activity Log and Learning History",
+    "content": "Complete learning history is always accessible. Activity log contains: Every lesson accessed with timestamp. Duration spent on each lesson. Quiz attempts and scores (without revealing answers). Assignment submission timestamps. Certificate earned dates. Forum posts and replies. Live session attendance. How to access: Profile > Learning History > Activity Log. Filter by: Date range, Course, Activity type. Export options: CSV export for personal records. PDF report for employer verification of learning hours. Learning statistics: Total hours learned. Average session duration. Most productive time of day. Course completion rate. Stored indefinitely - your complete learning journey preserved.",
+    "tags": ["activity log", "history", "timestamp", "export", "statistics"]
+  },
+  {
+    "id": "kb-053",
+    "category": "progress",
+    "title": "Cross-Device Sync and Cloud Backup",
+    "content": "Seamless learning across all your devices. Sync features: Real-time sync across web, iOS, and Android apps. Video playback position synced (resume on any device from exact timestamp). Quiz responses auto-saved every 30 seconds. Notes and bookmarks synced instantly. Offline mode: Download up to 30 lessons on mobile for offline access. Offline activity (video watching, notes) synced automatically when reconnected. Sync conflict resolution: Device with most recent timestamp wins. Notification if sync conflict detected. Data backup: All progress data backed up to cloud every hour. 90-day progress history retained even after course access expires. Account data exportable via Settings > Data > Export My Data (GDPR compliance).",
+    "tags": ["sync", "cross-device", "cloud", "offline", "backup", "GDPR"]
+  },
+  {
+    "id": "kb-054",
+    "category": "progress",
+    "title": "Performance Analytics and Learning Insights",
+    "content": "Data-driven insights improve learning outcomes. Analytics available: Time analytics: Hours per day, peak learning times, session lengths. Performance analytics: Quiz score trends, improvement over time, strongest and weakest topics. Comparison: Your performance vs. course average (anonymized). Completion velocity: Estimated completion date based on current pace. Engagement score: Composite metric of video completion, forum participation, quiz attempts. Accessing analytics: My Learning > Analytics > Select Course. Visual reports: Line charts (score trends), Bar charts (time per module), Heat maps (daily activity). Insights generated: 'You spend 40% less time on coding modules - consider revisiting fundamentals.' Recommendations auto-generated weekly.",
+    "tags": ["analytics", "insights", "performance", "trends", "data"]
+  },
+  {
+    "id": "kb-055",
+    "category": "progress",
+    "title": "Progress Reset, Course Restart and Archiving",
+    "content": "Managing your course progress effectively. Progress reset: Learners cannot manually reset progress (prevents grade manipulation). Instructors can reset individual learner progress upon request with valid reason. Course restart: To restart a course from scratch, contact support. All previous grades preserved in history. New attempt treated as separate enrollment. Archiving completed courses: Completed courses automatically move to 'Completed' tab after certificate earned. Can manually archive active courses to reduce dashboard clutter. Archived courses remain fully accessible. Re-activating archived courses: My Learning > Archived > Select Course > Unarchive. Course access expires: 12 months from enrollment. Extension purchasable for 6 months additional access.",
+    "tags": ["reset", "restart", "archive", "access expiry", "extension"]
+  },
+  {
+    "id": "kb-056",
+    "category": "progress",
+    "title": "Team and Organization Progress Tracking",
+    "content": "Organizations can track team learning at scale. Admin dashboard features: Overview of all team members' progress. Individual learner progress reports. Course completion rates by team/department. Time invested reports. Assessment performance summaries. Certificate earned reports. Custom learning path completion tracking. Reporting options: Weekly automated email reports to managers. Real-time dashboard for admins. Export to CSV, Excel, or PowerPoint. API access for integration with HR systems (Workday, SAP SuccessFactors). Compliance tracking: Mandatory training completion monitoring. Deadline enforcement and escalation alerts. Audit trail for compliance documentation. Manager view: Managers see only their direct reports' data.",
+    "tags": ["team", "organization", "admin", "reporting", "compliance", "manager"]
+  },
+  {
+    "id": "kb-057",
+    "category": "progress",
+    "title": "Notifications and Reminder System",
+    "content": "Stay on track with smart notifications. Notification types: Progress reminders - If inactive for 3+ days, reminder sent. Deadline alerts - 7 days, 3 days, 24 hours before hard deadlines. Grade notifications - When quiz, assignment, or project grade posted. Certificate ready - When certificate generated and available. Forum replies - When someone responds to your post. Live session reminders - 24 hours and 1 hour before. Streak reminders - Daily reminder to maintain streak. Notification channels: Email, In-app notification bell, Push notifications (mobile app), SMS (optional, for critical deadlines only). Customize: Settings > Notifications > Manage Preferences. Set quiet hours to avoid disturbance during certain times.",
+    "tags": ["notifications", "reminders", "deadline", "email", "push notification"]
+  },
+  {
+    "id": "kb-058",
+    "category": "progress",
+    "title": "Gamification and Achievement System",
+    "content": "Learning is more engaging with gamification. Achievement types: Course badges (earned per course completed). Skill badges (earned for completing related course clusters). Streak badges (for consistent daily learning). Community badges (for forum contributions). Speed badges (for completing courses ahead of schedule). Leaderboards: Weekly leaderboard (most lessons completed). Monthly leaderboard (highest quiz scores). All-time leaderboard (most certificates earned). Points system: Lesson completion = 10 points. Quiz pass = 25 points. Assignment submission = 50 points. Course completion = 200 points. Certificate earned = 500 points. Points redeemable for: Discount coupons, Course unlocks, Merchandise, Donation to education charities.",
+    "tags": ["gamification", "badges", "leaderboard", "points", "achievements"]
+  },
+  {
+    "id": "kb-059",
+    "category": "progress",
+    "title": "Completion Email and Certificate Notification",
+    "content": "Celebrating your achievements with automated milestones. Module completion: In-app congratulatory message with module summary. Section completion: Email with section completion summary and next steps. Course completion: Congratulatory email with: Course summary, Skills gained, Certificate download link, Suggested next courses, Share on LinkedIn button. Certificate email contents: PDF attachment of certificate, Verification link, LinkedIn share button, Skills gained summary. Notification timing: Certificate email sent within 24-48 hours of completing all requirements. If email not received after 48 hours: Check spam folder. Verify email address in profile. Contact support with course name and completion date.",
+    "tags": ["completion email", "notification", "certificate", "milestone", "LinkedIn"]
+  },
+  {
+    "id": "kb-060",
+    "category": "progress",
+    "title": "Learning Path and Career Roadmap",
+    "content": "Structured learning paths accelerate career goals. What is a Learning Path: A curated sequence of courses designed to build skills progressively toward a specific career goal. Examples: Data Scientist Path (8 courses, 6 months). Frontend Developer Path (6 courses, 4 months). Product Manager Path (5 courses, 3 months). Cybersecurity Analyst Path (7 courses, 5 months). Features: Recommended order of courses. Prerequisites automatically mapped. Progress shown across entire path. Estimated completion time. Salary outcomes for path completers. Path certificate upon completion. Creating custom paths: Pro members can create personal learning paths. Organizations can create mandatory learning paths for teams. AI path advisor: Input your current skills and target role - AI generates personalized path.",
+    "tags": ["learning path", "career roadmap", "sequence", "AI advisor", "custom path"]
+  },
+  {
+    "id": "kb-061",
+    "category": "course",
+    "title": "Group Learning and Study Groups",
+    "content": "Collaborative learning improves outcomes. Study group features: Form groups of 2-10 learners enrolled in same course. Shared discussion space within course forum. Group video watch parties (synchronized playback). Shared notes and highlight collections. Group assignment collaboration tools. Group progress comparison (opt-in). How to join or create: My Learning > Select Course > Community > Study Groups. Search existing groups by timezone, language, or schedule. Create new group with custom name and description. Group communication: In-platform group chat. Schedule group sessions via integrated calendar. Group leader can set meeting times and agendas. Group leaderboard showing individual contributions.",
+    "tags": ["study group", "collaborative", "watch party", "group notes", "community"]
+  },
+  {
+    "id": "kb-062",
+    "category": "course",
+    "title": "Mentorship Program",
+    "content": "Expert mentorship accelerates learning. Mentorship types: Peer mentorship - Match with advanced learners in same subject. Professional mentorship - Connect with industry professionals. Instructor office hours - 1-on-1 time with course instructor. How mentorship works: Apply for mentorship via My Learning > Mentorship. Match based on: Learning goals, Skill level, Availability, Domain interest. Session format: Video call via integrated platform (30-60 minutes). Structured agenda provided. Session notes saved in platform. Mentor qualifications: Professional mentors have 3+ years industry experience. Verified credentials. Trained in coaching methodology. Cost: Peer mentorship - Free. Professional mentorship - Included in Pro plan or $30/session. Instructor office hours - Free (2 sessions per course).",
+    "tags": ["mentorship", "mentor", "office hours", "1-on-1", "professional"]
+  },
+  {
+    "id": "kb-063",
+    "category": "assessment",
+    "title": "Capstone Project Guidelines",
+    "content": "Capstone projects demonstrate mastery across a specialization. What is a capstone: A comprehensive real-world project integrating skills from all courses in a specialization track. Characteristics: Open-ended problem solving. Real datasets or real client briefs used. 4-8 weeks to complete. Submitted as full project report, code repository, or working prototype. Evaluation: Evaluated by panel of 2 instructors and 1 industry expert. Rubric covers: Technical implementation, Problem-solving approach, Documentation quality, Presentation, Real-world applicability. Top capstone projects: Featured in platform showcase. Shared with partner employers. Eligible for cash prizes in quarterly showcase competitions. Support during capstone: Weekly office hours. Dedicated capstone forum. Mentor matching.",
+    "tags": ["capstone", "specialization", "project", "real-world", "showcase"]
+  },
+  {
+    "id": "kb-064",
+    "category": "certification",
+    "title": "Digital Badge System and Open Badges",
+    "content": "Digital badges provide granular skill recognition. Badge types: Course completion badges. Skill-specific badges (e.g., 'Python Data Analysis', 'React Hooks'). Achievement badges (streaks, speed completion). Community contribution badges. How badges work: Awarded automatically upon meeting criteria. Stored in your Badge Collection in profile. Open Badge standard (IMS Global): Cryptographically signed. Machine-readable metadata. Verifiable by any OpenBadge-compatible platform. Sharing badges: LinkedIn, email signature, personal website embed, Credly profile, Mozilla Backpack. Badge information displayed: Issuer, Criteria met, Issue date, Expiry (if applicable), Evidence (link to completed work). Employers can click badge to verify on platform.",
+    "tags": ["badge", "digital badge", "open badge", "Credly", "skill recognition"]
+  },
+  {
+    "id": "kb-065",
+    "category": "course",
+    "title": "Project-Based Learning Courses",
+    "content": "Project-based courses emphasize hands-on application. Structure: Learn by building real projects from day one. Each module adds a component to a growing project. Final result: a portfolio-ready project. Examples: Web Development - Build a full e-commerce site. Data Science - Analyze real market dataset. UX Design - Design a mobile app from scratch. Machine Learning - Build an ML model from data collection to deployment. Benefits: Portfolio building (showcase to employers). Deeper understanding through application. Problem-solving skills development. Immediate practical value. Project hosting: Platform provides hosting for web projects. GitHub integration for code projects. Projects remain hosted for 2 years after course completion. Project review: Peer review of projects. Top projects featured in monthly showcase.",
+    "tags": ["project-based", "portfolio", "hands-on", "real-world", "GitHub"]
+  },
+  {
+    "id": "kb-066",
+    "category": "assessment",
+    "title": "Quiz Question Types - Detailed Guide",
+    "content": "Understanding all question formats helps you prepare effectively. Question types on platform: Multiple Choice (MCQ) - Select one correct answer from 4 options. Multiple Select - Select all correct answers (partial credit available). True/False - Binary choice with explanation required in some courses. Fill in the Blank - Type exact answer (auto-graded, case-insensitive). Short Answer - Type a brief explanation (graded by rubric or AI). Matching - Match items in two columns. Ordering/Sequencing - Arrange items in correct order. Hotspot - Click correct area on an image. Drag and Drop - Move elements to correct positions. Code completion - Write missing code to complete a function. Each question type tests different cognitive levels from recall to application.",
+    "tags": ["question types", "MCQ", "multiple select", "fill blank", "short answer", "drag drop"]
+  },
+  {
+    "id": "kb-067",
+    "category": "certification",
+    "title": "Corporate Training and Bulk Certification",
+    "content": "Organizations can deploy certifications at scale. Corporate certification features: Bulk enrollment (up to 10,000 learners simultaneously). Custom branded certificates with company logo. Mandatory certification tracking for compliance. Automated certificate issuance upon completion. Integration with HR systems for certification records. Custom learning paths for specific job roles. White-label option: Platform can be white-labeled with company branding. Custom domain (learn.yourcompany.com). Branded login page and certificate templates. Reporting: Completion rates by department. Time to complete by role. Assessment performance analysis. Cost per certification report. Implementation: Dedicated Customer Success Manager assigned. Onboarding support and training for admins. SLA: 99.9% uptime guarantee.",
+    "tags": ["corporate", "bulk", "white-label", "compliance", "HR integration"]
+  },
+  {
+    "id": "kb-068",
+    "category": "progress",
+    "title": "Peer Learning and Social Features",
+    "content": "Social learning enhances engagement and outcomes. Social features: Follow other learners and see their public progress. Like and comment on forum posts. Share course completions and certificates to social feed. Public learner profiles showing: Certificates earned, Courses completed, Skills gained, Community contributions. Learning feed: See what courses your network is taking. Discover trending courses in your interest areas. Community events: Monthly virtual study halls. Peer teaching sessions (advanced learners teach peers). Hackathons and project challenges. Privacy controls: Choose what appears on public profile. Option for fully private profile. Control which achievements are visible. Social learning metrics: Learners with social connections complete courses 35% faster on average.",
+    "tags": ["social learning", "peer", "community", "profile", "follow", "privacy"]
+  },
+  {
+    "id": "kb-069",
+    "category": "course",
+    "title": "Course Creation and Instructor Platform",
+    "content": "Expert practitioners can teach on the platform. Becoming an instructor: Apply at instructor.platform.com. Requirements: Domain expertise (3+ years experience), Communication skills test, Sample course content review, Background check. Content creation tools: Browser-based video recorder and editor. Slide importer (PowerPoint, Google Slides). Quiz builder with 10 question types. Assignment rubric creator. Resource uploader. Revenue sharing: Instructors earn 50-70% of course revenue (based on exclusivity). Monthly payouts via bank transfer or PayPal. Dashboard showing enrollments, ratings, revenue, learner feedback. Support: Dedicated instructor support team. Course quality review before publishing. Marketing support for featured courses.",
+    "tags": ["instructor", "course creation", "revenue", "teaching", "content"]
+  },
+  {
+    "id": "kb-070",
+    "category": "assessment",
+    "title": "Special Accommodations for Assessments",
+    "content": "The platform supports diverse learner needs. Available accommodations: Extended time for assessments (1.5x or 2x standard time). Screen reader compatible assessments. Large font options during quizzes. Alternative format assessments (oral instead of written, where possible). Reduced distraction mode (simplified UI during assessments). How to request: Settings > Accessibility > Assessment Accommodations. Submit request with documentation (medical certificate or disability documentation). Approval process: 3-5 business days. Once approved, accommodations automatically applied to all future assessments. Annual renewal required for accommodation status. Confidential: Accommodation status not shared with instructors or peers. Dedicated accommodation support team available.",
+    "tags": ["accommodations", "accessibility", "extended time", "disability", "screen reader"]
+  },
+  {
+    "id": "kb-071",
+    "category": "course",
+    "title": "Financial Aid and Scholarship Programs",
+    "content": "Cost should not be a barrier to learning. Financial aid options: Income-based financial aid: Apply with proof of income. Reduces course price by 50-90%. Processing time: 15 days. Available for individual courses and subscriptions. Scholarships: Merit scholarships (based on quiz scores and engagement). Need-based scholarships (full tuition coverage). Corporate-sponsored scholarships (for specific domains like Women in Tech, Diversity in Finance). Regional scholarships for learners in developing countries. How to apply: Financial Aid > Apply Now. Provide: Income documentation, Learning goals statement, Why this course matters to you. Approval rate: 75% of eligible applicants receive some form of aid. Scholarship application deadline: Rolling admissions (apply anytime).",
+    "tags": ["financial aid", "scholarship", "income-based", "merit", "accessibility"]
+  },
+  {
+    "id": "kb-072",
+    "category": "progress",
+    "title": "Time Tracking and Learning Hours",
+    "content": "Accurate time tracking supports learning analytics. What is tracked: Time spent watching videos (paused time not counted). Time on reading materials (based on scroll and activity). Time in quizzes and assessments. Time in live sessions. Time in discussion forums. Not tracked: Time with app/page open but inactive (after 5-minute inactivity timeout). Time on downloads. Where to view: My Learning > Analytics > Time Report. Breakdowns: By course, by date, by activity type, by time of day. Weekly summary email: Sent every Monday showing previous week's learning hours. Professional development: Export learning hours report as PDF for employer CPD records. Target hours: Suggested 5-10 hours per week for steady course completion.",
+    "tags": ["time tracking", "learning hours", "analytics", "CPD", "weekly report"]
+  },
+  {
+    "id": "kb-073",
+    "category": "certification",
+    "title": "Transcript and Official Records",
+    "content": "Official learning transcripts for academic and professional use. Transcript contents: All courses enrolled. Completion status. Final grades. Certificate earned (yes/no). Enrollment and completion dates. Course credit hours (where applicable). How to request: Profile > My Certificates > Request Official Transcript. Processing time: Standard (3-5 business days) - Free. Expedited (24 hours) - $15 fee. Delivery options: Secure digital PDF with digital signature. Physical mail (additional fee). Direct send to institution email (free). Transcript security features: Digital signature from platform. Unique document ID. QR code verification link. Tamper-evident PDF. Official transcripts accepted by 200+ universities and thousands of employers globally.",
+    "tags": ["transcript", "official records", "grades", "academic", "digital signature"]
+  },
+  {
+    "id": "kb-074",
+    "category": "course",
+    "title": "Platform Security and Data Privacy",
+    "content": "Your data is protected with enterprise-grade security. Security measures: SOC 2 Type II certified. ISO 27001 compliant. End-to-end encryption for all data in transit (TLS 1.3). Data at rest encrypted (AES-256). Two-factor authentication (2FA) available and recommended. SSO support (Google, Microsoft, Apple, SAML). Data privacy: GDPR compliant (EU learners). CCPA compliant (California learners). No data sold to third parties. Anonymized analytics only. Data you control: View all your data: Settings > Privacy > Download My Data. Delete your account and data: Settings > Privacy > Delete Account (30-day grace period). Cookie preferences customizable. Privacy policy reviewed and updated quarterly.",
+    "tags": ["security", "privacy", "GDPR", "CCPA", "encryption", "2FA"]
+  },
+  {
+    "id": "kb-075",
+    "category": "assessment",
+    "title": "Automated Grading and AI Feedback",
+    "content": "AI-powered grading provides instant, detailed feedback. Auto-graded assessments: MCQ and multiple select quizzes - instant grading. Code assignments - automated test case execution. Fill-in-the-blank - fuzzy matching for near-correct answers. AI-assisted grading (for short answers): NLP model evaluates semantic correctness, not just keyword matching. Confidence score shown with grade. Human instructor reviews low-confidence AI grades. AI feedback features: Explains why an answer is incorrect conceptually. Points to specific course section to revisit. Suggests additional practice resources. Tracks error patterns across your submissions. Important: AI feedback explains concepts only - never reveals correct answers. Feedback quality continuously improved through instructor validation loop.",
+    "tags": ["auto-grade", "AI feedback", "NLP", "instant grading", "code execution"]
+  },
+  {
+    "id": "kb-076",
+    "category": "progress",
+    "title": "Goal Setting and Personal Learning Plans",
+    "content": "Structured goal setting improves completion rates. Goal types: Daily goal - Minutes of learning per day (15, 30, 45, or 60 minutes). Weekly goal - Lessons per week. Course deadline - Self-imposed completion target date. Certificate target date - Deadline for earning certificate. How to set goals: My Learning > Goals > Set New Goal. AI-suggested goals based on course length and your schedule. Calendar integration: Goals synced to Google Calendar or Outlook. Daily goal reminders at your preferred time. Progress toward goals: Dashboard shows daily/weekly goal completion. Streaks tied to daily goal achievement. Weekly goal summary sent every Sunday. Research shows: Learners who set goals complete courses 2.5x more often than those without goals.",
+    "tags": ["goals", "personal plan", "daily target", "completion rate", "reminders"]
+  },
+  {
+    "id": "kb-077",
+    "category": "course",
+    "title": "Internship and Job Placement Programs",
+    "content": "Career acceleration through real-world opportunities. Internship program: Available for learners who complete specific courses with 85%+ grade. Partner companies offer 1-3 month paid or unpaid internships. Application process: Apply via Careers > Internships after course completion. Submit portfolio project from course. Interview with partner company. Job placement services: Resume building workshops (monthly webinars). Job board exclusive to platform learners. Direct recruiter connections for Professional certificate holders. Mock interview sessions with industry professionals. Job placement statistics: 68% of Professional certificate holders report job-related outcomes within 6 months. Average salary increase: 23% for career changers. Fastest placements: Data Science, Cloud Computing, UX Design.",
+    "tags": ["internship", "job placement", "career", "portfolio", "recruiter"]
+  },
+  {
+    "id": "kb-078",
+    "category": "assessment",
+    "title": "Group Projects and Collaborative Assessments",
+    "content": "Team-based assessments develop real-world collaboration skills. Group project features: Teams of 2-5 learners formed randomly or by self-selection. Shared project workspace with version control. Individual contribution tracking (prevents free-riding). Peer evaluation component within group. Project management tools: Task assignment within platform. Milestone tracking. Shared document editing. Group video calls via integrated conferencing. Grading breakdown: Group grade (60%) - Overall project quality. Individual grade (40%) - Peer evaluation score + individual contribution metrics. Conflict resolution: If team disputes arise, contact course moderator. Learner can request individual track if team collaboration is not possible. Timeline: Group projects typically span 2-3 weeks.",
+    "tags": ["group project", "collaborative", "team", "peer evaluation", "contribution"]
+  },
+  {
+    "id": "kb-079",
+    "category": "certification",
+    "title": "Certificate Authenticity and Anti-Fraud Measures",
+    "content": "Our certificates are designed to be unforgeable. Anti-fraud features: Unique alphanumeric certificate ID (e.g., PLT-2024-A8X3K2). QR code linking to real-time verification page. Blockchain timestamp for Professional certificates (Ethereum network). Holographic security element on printed certificates. Digital signature from platform using PKI. Detection of fake certificates: Online verification portal instantly identifies fake IDs. Certificate metadata stored in immutable database. Employer reporting: Employers can report suspected fake certificates via verify.platform.com > Report Fraud. Investigation within 48 hours. If fraud confirmed: Certificate revoked and account banned. Legal action pursued for egregious cases. Learner responsibility: Ensure your certificate is only shared accurately - misrepresentation is a violation.",
+    "tags": ["authenticity", "anti-fraud", "blockchain", "QR code", "verification"]
+  },
+  {
+    "id": "kb-080",
+    "category": "progress",
+    "title": "Accessibility Progress Features for Disabled Learners",
+    "content": "Progress tracking is fully accessible. Screen reader support: All dashboard elements have ARIA labels. Progress percentages announced by screen readers. Assessment scores read aloud. Alternative progress indicators: Audio announcements for milestone achievements. Haptic feedback on mobile app for goal completion. High-contrast progress bars for visually impaired learners. Motor impairment support: Full keyboard navigation of dashboard. Voice command support via browser accessibility tools. Extended session timeouts (default 30 min, extendable to 4 hours). Cognitive accessibility: Simplified dashboard view available. Progress broken into small, manageable milestones. Clear visual indicators of what's next. Colour-blind friendly: Progress indicators use patterns and text labels, not color alone.",
+    "tags": ["accessibility", "screen reader", "ARIA", "motor impairment", "cognitive"]
+  },
+  {
+    "id": "kb-081",
+    "category": "course",
+    "title": "Industry Advisory and Curriculum Development",
+    "content": "Courses are designed with real industry input. Curriculum development process: Industry advisory boards for each domain review and validate curriculum. Course content aligned with current job market requirements. Skills gap analysis conducted quarterly using job posting data. Instructor vetting: Domain expertise verified (LinkedIn, portfolio review). Teaching sample reviewed by pedagogical team. Annual instructor performance review based on learner ratings and completion rates. Content freshness: Technology courses updated at minimum every 6 months. Business courses: annually. All courses reviewed against current industry standards. Learner feedback integration: Course improvement suggestions reviewed monthly. High-upvoted suggestions escalated to instructors for consideration.",
+    "tags": ["curriculum", "industry", "advisory board", "skills gap", "content quality"]
+  },
+  {
+    "id": "kb-082",
+    "category": "assessment",
+    "title": "Exam Preparation Resources and Study Tools",
+    "content": "Comprehensive preparation resources maximize success. Pre-exam resources: Practice exam bank (200-500 questions per course). Topic-wise mock tests. Timed simulation exams (identical format to actual exam). Weak area identification report after practice exams. Study guides: Module summary PDFs. Concept map visualizations. Key formula sheets (for quantitative courses). Glossary of important terms. Video revision series (shorter recap videos per module). Study schedule generator: Input your exam date and available hours per day. AI generates optimized study schedule. Prioritizes weak areas identified from quiz history. Sends daily study reminders. Pre-exam checklist: Technical requirements check. ID verification preparation. Environment setup guide.",
+    "tags": ["exam prep", "practice exam", "study guide", "mock test", "study schedule"]
+  },
+  {
+    "id": "kb-083",
+    "category": "progress",
+    "title": "Course Recommendations and Personalization Engine",
+    "content": "AI-powered recommendations ensure relevant learning. How recommendations work: Collaborative filtering: Learners similar to you also completed these courses. Content-based filtering: Courses similar to what you've enjoyed. Career path alignment: Courses that match your stated career goals. Skill gap analysis: Courses that fill gaps in your current skill profile. Recommendation surfaces: After completing a lesson ('You might also like...'). After completing a course ('Next recommended course'). Weekly recommendation email. Homepage 'Recommended for You' section. Personalization inputs: Courses enrolled and completed. Quiz performance by topic. Learning time preferences. Stated career goals (set in Profile > Career Goals). Location and language preferences. Feedback on recommendations: Thumbs up/down to improve recommendations.",
+    "tags": ["recommendations", "AI", "personalization", "collaborative filtering", "career goals"]
+  },
+  {
+    "id": "kb-084",
+    "category": "certification",
+    "title": "Government and Regulatory Recognized Certifications",
+    "content": "Some platform certifications carry regulatory recognition. Recognized certifications include: Healthcare: CPD-certified health informatics courses. Finance: SEC-aligned financial analysis programs. Cybersecurity: NIST framework aligned certifications. Education: CPE credits for licensed educators. Legal: CLE (Continuing Legal Education) credits. Recognition process: Platform works with regulatory bodies to get course approval. Annual re-certification of approved courses. Learners receive documentation needed for regulatory filings. How to identify: Look for regulatory body logo on course page. Filter by 'Regulatory Approved' in course search. Check course details under 'Recognition and Accreditation' tab. Documentation: Completion certificates include regulatory approval numbers. Official transcript includes credit hours by category.",
+    "tags": ["regulatory", "CPD", "CPE", "CLE", "government", "accreditation"]
+  },
+  {
+    "id": "kb-085",
+    "category": "course",
+    "title": "Partnerships with Universities and Educational Institutions",
+    "content": "Academic partnerships extend the value of platform learning. University partnerships: 50+ partner universities globally. Pathways: Platform courses as prerequisites for university programs. Credit transfer for eligible courses (ACE recommended). Dual enrollment programs. Joint certificate programs co-awarded by university and platform. Benefits for learners: Academic recognition of learning. Pathway to formal degrees. University library access for enrolled learners. Student discounts on partner university services. Partner institutions include: Universities in USA, UK, Canada, Australia, India, Germany, Singapore. Community colleges for vocational certifications. Professional schools (law, medicine, business). How to apply: Course page > University Partnership tab > Apply for Credit Transfer.",
+    "tags": ["university", "partnership", "credit transfer", "degree", "academic"]
+  },
+  {
+    "id": "kb-086",
+    "category": "assessment",
+    "title": "Performance-Based Assessment and Simulation Labs",
+    "content": "Hands-on simulations test real skill application. Simulation lab types: Cloud lab environments (AWS, Azure, GCP sandboxes). Cybersecurity labs (virtual attack/defense scenarios). Database labs (query real-scale databases). Network simulation labs. Business case simulations. How labs work: Browser-based, no installation required. Sandboxed environment (actions don't affect real systems). Pre-configured starting state for each lab. Step-by-step guided labs for practice. Open-ended challenge labs for assessment. Lab grading: Task completion tracking. Efficiency scoring (steps taken vs. optimal). Time taken. Error rate. Hints used (reduces score slightly). Lab access: Included in Pro plan. Individual lab passes available ($5-15 per lab). Labs accessible for 12 months from enrollment.",
+    "tags": ["simulation", "lab", "cloud lab", "hands-on", "performance-based", "sandbox"]
+  },
+  {
+    "id": "kb-087",
+    "category": "progress",
+    "title": "Engagement Score and Learning Quality Metrics",
+    "content": "Engagement score reflects quality of learning, not just completion. Engagement score components: Video completion rate (watch at least 85% of each video): 25%. Quiz attempt rate (attempting practice quizzes before graded): 20%. Forum participation (posts, replies, upvotes received): 15%. Assignment quality (peer review scores received): 20%. Consistency (maintaining learning streaks): 10%. Resource downloads and use: 10%. Score interpretation: 90-100: Highly engaged learner. 70-89: Good engagement. 50-69: Moderate - consider more active participation. Below 50: Low engagement - risk of not completing course. Benefits of high engagement score: Preferred matching for study groups. Priority in job referrals to partners. Eligible for platform ambassador program. Featured in monthly learner spotlight.",
+    "tags": ["engagement score", "quality", "metrics", "participation", "completion rate"]
+  },
+  {
+    "id": "kb-088",
+    "category": "certification",
+    "title": "Certificate Program Comparison Guide",
+    "content": "Choosing the right certification program for your goals. Comparison of certificate programs: Course Completion Certificate: Time 4-40 hours, Cost included in plan, Recognition good for self-learning proof, Best for exploring new topics. Specialization Certificate: Time 3-6 months, Cost included in Pro, Recognition strong for career change, Best for deep skill building. Professional Certificate: Time 4-12 months, Cost Pro + exam fee, Recognition industry-recognized, Best for formal credential. University Partnership Certificate: Time 6-12 months, Cost varies by institution, Recognition academic and professional, Best for degree pathway. Decision framework: For job switch - Professional or Specialization. For promotion - Professional. For learning - Course Completion. For academia - University Partnership.",
+    "tags": ["certificate comparison", "decision guide", "professional", "specialization", "university"]
+  },
+  {
+    "id": "kb-089",
+    "category": "course",
+    "title": "Content Quality Standards and Review Process",
+    "content": "Every course meets rigorous quality standards before publishing. Quality review process: Step 1 - Instructor submits course draft. Step 2 - Technical review (video quality, audio clarity, platform compatibility). Step 3 - Pedagogical review (learning objectives, assessment alignment, pacing). Step 4 - Content accuracy review by domain expert. Step 5 - Accessibility review (captions, screen reader compatibility). Step 6 - Learner beta test (10 beta testers complete course, provide feedback). Step 7 - Final revisions and publication. Quality standards: Minimum video quality: 720p, clear audio. All videos must have accurate captions. Learning objectives stated clearly. Each module must have at least one assessment. Resources must be current (within 2 years for tech content). Average review process: 4-6 weeks.",
+    "tags": ["quality standards", "review process", "content accuracy", "accessibility", "pedagogical"]
+  },
+  {
+    "id": "kb-090",
+    "category": "assessment",
+    "title": "Retake Policy and Grade Improvement",
+    "content": "Comprehensive retake and grade improvement options. Graded quiz retakes: 24-hour cooling period between attempts. Maximum 2-3 attempts (course-specific). Highest score recorded. Questions change each attempt (drawn from question bank). Assignment resubmission: One resubmission allowed if initial score below passing. Resubmission must be submitted within 7 days of receiving feedback. Resubmission graded by same rubric. Higher of two scores recorded. Final exam retakes: 7-day waiting period between attempts. Maximum 1-2 attempts (course-specific). After all attempts exhausted: 30-day wait then course re-enrollment required. Grade improvement strategy: Review feedback carefully before retaking. Revisit specific modules flagged in feedback. Use practice quizzes to check readiness. Attend instructor office hours for guidance.",
+    "tags": ["retake", "resubmission", "grade improvement", "cooling period", "attempt policy"]
+  },
+  {
+    "id": "kb-091",
+    "category": "course",
+    "title": "Emerging Technology and Trending Courses",
+    "content": "Staying current with in-demand skills is our priority. Trending course categories 2024-2025: Artificial Intelligence and Machine Learning, Large Language Models and Prompt Engineering, Cloud Native Development, Cybersecurity and Zero Trust Architecture, Data Engineering and MLOps, Sustainable Technology and Green IT, Product-Led Growth, Web3 and Decentralized Applications. Course launch frequency: 50-100 new courses added monthly. Fast-track development: Can launch urgent in-demand courses within 6 weeks. Early access program: Beta learners get access to new courses before official launch. Provide feedback that shapes final course content. 50% discount on beta courses. Trending badge shown on courses with high recent enrollment growth.",
+    "tags": ["trending", "AI", "machine learning", "emerging technology", "new courses"]
+  },
+  {
+    "id": "kb-092",
+    "category": "progress",
+    "title": "Parent and Guardian Monitoring for Young Learners",
+    "content": "Safe and supported learning for younger learners. Age requirements: Platform open to learners 13 and above. Learners under 18 require parental consent during registration. Parent/guardian account features: Link to learner account (learner must approve). View learning progress and activity. Monitor time spent daily. Receive weekly progress email. Set content restrictions (block adult-level content). Set daily time limits. Communication monitoring: Parents can view forum post history. Private messaging disabled for under-18 accounts (unless parent enables). Safe environment: All courses reviewed for age-appropriate content. Community moderation for under-18 learners. Reporting tool for inappropriate content/behavior. COPPA compliant for learners under 13 (separate parental consent process for special programs).",
+    "tags": ["parent", "guardian", "young learner", "monitoring", "age restriction", "COPPA"]
+  },
+  {
+    "id": "kb-093",
+    "category": "certification",
+    "title": "Certificate Reissuance and Lost Certificate Recovery",
+    "content": "Certificates are never permanently lost. Certificate recovery options: Option 1 - Re-download anytime: My Profile > My Certificates > Download. Always available for free. Option 2 - Lost account access: Contact support with: Full name, Email used, Course name, Approximate completion date. Identity verified via: Government ID + email verification. Recovery time: 24-48 hours. Certificate reissuance reasons: Name correction (see Name Correction guide). Institution logo update (if partner institution changes). Platform rebranding. Reissuance process: Support > Certificate Services > Request Reissuance. Original certificate revoked (invalid after reissuance). New certificate issued with same original completion date. Certificate history: All versions of your certificates stored in account. Reissuance history logged for transparency.",
+    "tags": ["reissuance", "lost certificate", "recovery", "re-download", "account access"]
+  },
+  {
+    "id": "kb-094",
+    "category": "course",
+    "title": "Platform API and Integration Capabilities",
+    "content": "Enterprise integration options for organizations. Available APIs: SSO Integration (SAML 2.0, OAuth 2.0). LMS Integration (SCORM, xAPI/Tin Can). HRIS Integration (Workday, SAP, BambooHR). Progress API (pull learner progress data). Certificate Verification API. Webhook support for real-time events (course completion, certificate earned). Pre-built integrations: Slack (learning reminders, completion notifications). Microsoft Teams (course access within Teams). Salesforce (track training for sales teams). Zoom (live session integration). Google Workspace (calendar, Drive). Integration support: Dedicated technical account manager for Enterprise clients. API documentation at docs.platform.com/api. Sandbox environment for integration testing. Implementation support included in Enterprise plan.",
+    "tags": ["API", "integration", "SSO", "SCORM", "xAPI", "enterprise", "webhook"]
+  },
+  {
+    "id": "kb-095",
+    "category": "assessment",
+    "title": "Accessibility in Assessments - Full Guide",
+    "content": "Equitable assessment experience for all learners. Accessibility features in quizzes: Screen reader fully compatible with all question types. Keyboard-only navigation for all quiz interactions. No time limits by default for learners with accommodation. Font size adjustable during quiz. High contrast mode. Question read-aloud feature (text-to-speech). For assignments: Extended deadline automatically applied for accommodated learners. Alternative submission format available (audio/video instead of written). For proctored exams: Extended time (1.5x or 2x). Breaks allowed with timer paused. Alternative proctoring method available if webcam use is difficult. Support person allowed in room (pre-approved). Requesting accommodations: Settings > Accessibility > Assessment Accommodations. Submit documentation. 5 business day review. Automatically applies to all future assessments.",
+    "tags": ["accessibility", "accommodations", "screen reader", "extended time", "keyboard navigation"]
+  },
+  {
+    "id": "kb-096",
+    "category": "progress",
+    "title": "Course Completion Certificates vs Progress Certificates",
+    "content": "Understanding the difference between progress and completion. Progress Certificate (not offered): We do not issue certificates for partial course completion. There is no certificate for completing 50% or 75% of a course. Partial completion has no certificate value. Course Completion Certificate: Issued only upon meeting ALL requirements. No certificate issued for completing lessons without passing assessments. Milestone acknowledgments (not certificates): Digital badges for completing sections. Points awarded for module completion. Congratulatory in-app messages. These are engagement rewards, not certificates. Why full completion required: Ensures certificate represents genuine mastery. Maintains employer trust in certificate value. Aligns with industry standards for credential issuance. If you cannot complete: Incomplete grade option available for documented circumstances.",
+    "tags": ["progress certificate", "completion certificate", "partial completion", "milestone", "badge"]
+  },
+  {
+    "id": "kb-097",
+    "category": "course",
+    "title": "Feedback and Platform Improvement",
+    "content": "Learner feedback drives platform improvement. Feedback channels: Course feedback: After 30% completion and after completion. Platform feedback: Feedback button in bottom right corner. Bug reports: Help > Report a Bug (includes automatic screenshot capture). Feature requests: Community > Feature Requests > Submit Idea. Feedback response: Course feedback reviewed by instructor within 2 weeks. Platform bugs: Critical bugs fixed within 24 hours, Major within 1 week, Minor within 1 month. Feature requests: Upvoted features added to roadmap. Top requests addressed quarterly. How feedback is used: Course ratings affect course discoverability. Recurring feedback themes escalated to platform team. Annual learner satisfaction survey results published transparently. NPS (Net Promoter Score) tracked and published quarterly.",
+    "tags": ["feedback", "bug report", "feature request", "improvement", "NPS"]
+  },
+  {
+    "id": "kb-098",
+    "category": "certification",
+    "title": "Certification Pathway Planner",
+    "content": "Strategic certification planning for career advancement. Career-to-certification mapping: Data Scientist: Python for Data Science → Statistics → Machine Learning → Deep Learning → MLOps → Data Science Specialization Certificate. Full Stack Developer: HTML/CSS → JavaScript → React → Node.js → Databases → Full Stack Specialization Certificate. Cybersecurity Analyst: Networking Fundamentals → Linux → Security+ Prep → CEH Prep → Cybersecurity Professional Certificate. Product Manager: Product Thinking → Agile/Scrum → Product Analytics → Go-to-Market → PM Specialization Certificate. Pathway planner tool: My Learning > Career > Pathway Planner. Input: Current skills, Target role, Available time per week. Output: Personalized certification pathway with timeline. Estimated total time and cost. Job market demand data for target role. Salary projection upon completing pathway.",
+    "tags": ["certification pathway", "career planning", "roadmap", "data science", "full stack", "cybersecurity"]
+  },
+  {
+    "id": "kb-099",
+    "category": "assessment",
+    "title": "Assessment Security and Anti-Cheating Measures",
+    "content": "Maintaining assessment integrity for all learners. Technical security measures: Question bank randomization (different questions each attempt). Answer option shuffling within questions. Time limits prevent extended external research. Browser lockdown mode for high-stakes exams (prevents tab switching, copy-paste). IP address monitoring (flags suspicious location changes mid-exam). Behavioral analytics during proctored exams: Gaze detection, Multiple faces detection, Audio monitoring, Screen capture. AI cheating detection: Pattern analysis across submissions identifies suspicious similarities. Timing analysis (answers too fast may indicate external assistance). Keystroke dynamics analysis. Consequences: Confirmed cheating: Assessment score zeroed. First offense warning. Repeat offense: Course removal and account suspension. Severe cases: Permanent ban. All decisions subject to appeal within 14 days.",
+    "tags": ["security", "anti-cheating", "proctoring", "randomization", "browser lockdown"]
+  },
+  {
+    "id": "kb-100",
+    "category": "progress",
+    "title": "Long-Term Learning Journey and Lifelong Education",
+    "content": "The platform supports learning throughout your entire career. Lifelong learning features: Permanent access to your learning history (even after subscription ends). Certificate portfolio grows over your career. Skill profile updated automatically as courses completed. Alumni network: Connect with past learners from same courses. Industry-specific alumni groups. Annual alumni survey tracking career outcomes. Long-term learner benefits: Loyalty discount: 10% off after 1 year, 20% off after 2 years, 30% off after 3 years. Early access to new courses for long-term learners. Dedicated account manager for learners with 10+ certificates. Continuing education: Re-take courses for free (audit mode) to refresh knowledge. Course updates notify you of significant new content. Lifelong learning transcript: Complete record of all learning from account creation to present.",
+    "tags": ["lifelong learning", "alumni", "career journey", "loyalty", "continuing education"]
   }
 ]
