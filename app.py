@@ -44,8 +44,19 @@ st.markdown("""
     .badge-general       { background:#f3f4f6; color:#374151; }
     .badge-blocked       { background:#fee2e2; color:#b91c1c; }
     .source-card {
-        background: #f8fafc; border-left: 3px solid #667eea;
-        border-radius: 6px; padding: 0.6rem 1rem; margin: 0.3rem 0; font-size: 0.82rem;
+        background: #1e1e2e;
+        border-left: 3px solid #667eea;
+        border-radius: 6px;
+        padding: 0.6rem 1rem;
+        margin: 0.3rem 0;
+        font-size: 0.82rem;
+        color: #e2e8f0 !important;
+    }
+    .source-card b {
+        color: #a5b4fc !important;
+    }
+    .source-card i {
+        color: #94a3b8 !important;
     }
     .chunk-info {
         background: #eff6ff; border-radius: 6px;
@@ -114,7 +125,7 @@ with st.sidebar:
                 st.error(f"❌ {e}")
     else:
         st.success("✅ Gemini Connected")
-        st.caption("Model: **gemini-2.0-flash-lite**")
+        st.caption("Model: **gemini-2.5-flash-lite**")
 
     st.divider()
     st.markdown("#### ⚙️ RAG Settings")
@@ -153,7 +164,7 @@ with st.sidebar:
             st.rerun()
     with c2:
         if st.button("📞 Support", use_container_width=True):
-            st.info("📧 support@edtech.com\n💬 9am–6pm")
+            st.info("📧 chatreshkonchada@gmail.com\n💬 9am–6pm")
 
     st.divider()
     st.caption(f"Session: `{st.session_state.session_id[:8]}...`")
