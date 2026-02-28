@@ -1,0 +1,302 @@
+[
+  {
+    "id": "kb-001", "category": "course",
+    "title": "Platform Overview",
+    "content": "Our EdTech platform offers self-paced and instructor-led courses across technology, business, and creative domains. Learners can access video lectures, readings, quizzes, and projects.",
+    "tags": ["overview", "platform"]
+  },
+  {
+    "id": "kb-002", "category": "course",
+    "title": "Course Enrollment Process",
+    "content": "To enroll, navigate to the course catalog, select a course, and click Enroll Now. Free courses are instantly accessible; paid courses require payment before access.",
+    "tags": ["enrollment", "access"]
+  },
+  {
+    "id": "kb-003", "category": "course",
+    "title": "Course Structure",
+    "content": "Each course is divided into Modules, and each Module contains Lessons. A typical course has 4-10 modules with 3-8 lessons each, including videos, readings, and exercises.",
+    "tags": ["structure", "modules", "lessons"]
+  },
+  {
+    "id": "kb-004", "category": "course",
+    "title": "Self-Paced Learning",
+    "content": "Self-paced courses let learners study on their own schedule with no fixed deadlines unless a time-limited exam applies. Learners can pause and resume anytime.",
+    "tags": ["self-paced", "flexibility"]
+  },
+  {
+    "id": "kb-005", "category": "course",
+    "title": "Instructor-Led Courses",
+    "content": "Instructor-led courses follow a fixed weekly schedule with live sessions, assignment deadlines, and instructor interaction via discussion forums and office hours.",
+    "tags": ["instructor-led", "live", "schedule"]
+  },
+  {
+    "id": "kb-006", "category": "course",
+    "title": "Video Lectures",
+    "content": "Video lectures are pre-recorded and on demand. Learners can pause, rewind, and replay. Transcripts and closed captions are available. Average video length is 5-15 minutes.",
+    "tags": ["video", "lecture"]
+  },
+  {
+    "id": "kb-007", "category": "course",
+    "title": "Course Materials Access",
+    "content": "Once enrolled, all materials including videos, readings, and downloads are accessible from the My Learning dashboard. Materials remain available for 1 year post-enrollment unless stated otherwise.",
+    "tags": ["materials", "dashboard", "access"]
+  },
+  {
+    "id": "kb-008", "category": "course",
+    "title": "Course Prerequisites",
+    "content": "Some courses list prerequisites on their course page. Prerequisites are advisory not technically enforced but strongly recommended for best learning outcomes.",
+    "tags": ["prerequisites", "requirements"]
+  },
+  {
+    "id": "kb-009", "category": "course",
+    "title": "Discussion Forums",
+    "content": "Each course has a discussion forum where learners ask questions and collaborate. Instructors and TAs monitor forums and respond within 48 hours.",
+    "tags": ["forum", "discussion", "community"]
+  },
+  {
+    "id": "kb-010", "category": "course",
+    "title": "Course Ratings and Reviews",
+    "content": "After completing a course, learners can rate it from 1 to 5 stars and write a review. Ratings are visible on the course listing page and help future learners decide.",
+    "tags": ["rating", "review", "feedback"]
+  },
+  {
+    "id": "kb-011", "category": "assessment",
+    "title": "Types of Assessments",
+    "content": "The platform has four assessment types: Practice Quizzes which are ungraded self-checks, Graded Quizzes which are scored and count toward grade, Assignments which are peer or instructor reviewed, and Final Exams which are required for certification.",
+    "tags": ["assessment", "quiz", "exam", "assignment"]
+  },
+  {
+    "id": "kb-012", "category": "assessment",
+    "title": "Practice Quizzes",
+    "content": "Practice quizzes are ungraded exercises at the end of lessons to help learners self-assess understanding. They can be retaken unlimited times with no penalty.",
+    "tags": ["practice", "quiz", "self-check"]
+  },
+  {
+    "id": "kb-013", "category": "assessment",
+    "title": "Graded Quizzes",
+    "content": "Graded quizzes are scored and contribute to your overall course grade. Each quiz has a time limit of typically 20-40 minutes and a limited number of attempts usually 2-3.",
+    "tags": ["graded", "quiz", "score"]
+  },
+  {
+    "id": "kb-014", "category": "assessment",
+    "title": "Quiz Attempt Policy",
+    "content": "Most graded quizzes allow 2-3 attempts. The highest score across attempts is recorded. A 24-hour cooling period may apply between attempts to encourage review.",
+    "tags": ["attempts", "policy", "quiz"]
+  },
+  {
+    "id": "kb-015", "category": "assessment",
+    "title": "Assignment Submission",
+    "content": "Assignments are submitted via the course portal. Accepted formats include PDF, DOCX, and ZIP files. Late submissions may receive a penalty as defined in the course syllabus.",
+    "tags": ["assignment", "submission", "deadline"]
+  },
+  {
+    "id": "kb-016", "category": "assessment",
+    "title": "Peer Review Process",
+    "content": "Some assignments use peer review. Learners evaluate each other's submissions using a rubric provided by the instructor. Each submission receives 3 peer reviews and an average score.",
+    "tags": ["peer review", "rubric", "assignment"]
+  },
+  {
+    "id": "kb-017", "category": "assessment",
+    "title": "Final Exam Format",
+    "content": "Final exams are timed auto-graded tests covering all course modules. They are typically 60-90 minutes long and allow only 1-2 attempts. Some are proctored online.",
+    "tags": ["final exam", "proctored", "timed"]
+  },
+  {
+    "id": "kb-018", "category": "assessment",
+    "title": "Passing Score Requirements",
+    "content": "The minimum passing score varies by course but is typically 70 percent. Some certification tracks require 80 percent or higher. Check the course syllabus for exact passing thresholds.",
+    "tags": ["passing score", "grade", "threshold"]
+  },
+  {
+    "id": "kb-019", "category": "assessment",
+    "title": "Grade Calculation",
+    "content": "Final grades are a weighted average: Quizzes count for 30 percent, Assignments count for 40 percent, and Final Exam counts for 30 percent. Weightings may differ per course so always check the syllabus.",
+    "tags": ["grade", "calculation", "weightage"]
+  },
+  {
+    "id": "kb-020", "category": "assessment",
+    "title": "Retaking Assessments",
+    "content": "If you fail a graded assessment you may retake it based on the attempt limit. For final exams a retake may require waiting 7 days and possibly re-enrolling in the course.",
+    "tags": ["retake", "fail", "reassessment"]
+  },
+  {
+    "id": "kb-021", "category": "assessment",
+    "title": "Academic Integrity Policy",
+    "content": "All assessments must be completed independently unless stated otherwise. Sharing quiz or exam questions externally is prohibited and may result in course removal or account ban.",
+    "tags": ["integrity", "policy", "rules"]
+  },
+  {
+    "id": "kb-022", "category": "assessment",
+    "title": "Proctored Exam Rules",
+    "content": "Proctored exams require a webcam, microphone, and a quiet environment. AI proctoring monitors activity during the exam. Notes and external resources are not permitted.",
+    "tags": ["proctored", "webcam", "exam rules"]
+  },
+  {
+    "id": "kb-023", "category": "certification",
+    "title": "Certification Overview",
+    "content": "Upon passing all assessments and completing all modules, learners earn a digital certificate of completion. Certificates are issued by the platform and optionally by partner institutions.",
+    "tags": ["certificate", "completion", "overview"]
+  },
+  {
+    "id": "kb-024", "category": "certification",
+    "title": "Certificate Eligibility",
+    "content": "To be eligible for a certificate learners must complete all required lessons, pass all graded quizzes, submit all assignments, and pass the final exam with the required score.",
+    "tags": ["eligibility", "certificate", "requirements"]
+  },
+  {
+    "id": "kb-025", "category": "certification",
+    "title": "Certificate Issuance Timeline",
+    "content": "Certificates are generated automatically within 24-48 hours after all requirements are met. Learners receive an email notification with a download link.",
+    "tags": ["issuance", "timeline", "certificate"]
+  },
+  {
+    "id": "kb-026", "category": "certification",
+    "title": "Certificate Download and Sharing",
+    "content": "Certificates can be downloaded as PDF from the My Certificates section of your profile. A shareable URL is also provided for LinkedIn and other professional networks.",
+    "tags": ["download", "share", "LinkedIn", "certificate"]
+  },
+  {
+    "id": "kb-027", "category": "certification",
+    "title": "Certificate Verification",
+    "content": "Each certificate has a unique ID and QR code. Employers and institutions can verify authenticity by entering the certificate ID on the verification portal.",
+    "tags": ["verify", "authenticity", "QR", "certificate"]
+  },
+  {
+    "id": "kb-028", "category": "certification",
+    "title": "Specialization Certificate",
+    "content": "Specialization tracks consist of 3-6 related courses. Completing all courses in a track earns a Specialization Certificate which carries more weight than individual course certificates.",
+    "tags": ["specialization", "track", "series"]
+  },
+  {
+    "id": "kb-029", "category": "certification",
+    "title": "Professional Certification Exams",
+    "content": "Some courses lead to industry-recognized certifications. These require separate proctored exams registered through third-party certification bodies such as AWS or Google Cloud.",
+    "tags": ["professional", "industry", "certification exam"]
+  },
+  {
+    "id": "kb-030", "category": "certification",
+    "title": "Certificate Expiry and Renewal",
+    "content": "Platform certificates of completion do not expire. However industry certifications such as AWS or Google Cloud may have validity periods and require periodic renewal.",
+    "tags": ["expiry", "renewal", "validity"]
+  },
+  {
+    "id": "kb-031", "category": "certification",
+    "title": "Re-certification Policy",
+    "content": "If a learner fails to pass the final exam within allowed attempts they must re-enroll after a 30-day waiting period. Re-enrollment fees may apply for paid courses.",
+    "tags": ["re-enroll", "fail", "retry", "certification"]
+  },
+  {
+    "id": "kb-032", "category": "progress",
+    "title": "Progress Tracking Overview",
+    "content": "The My Learning dashboard shows overall course completion percentage, module-by-module progress, and assessment scores. Progress is updated in real time as lessons are completed.",
+    "tags": ["progress", "dashboard", "tracking"]
+  },
+  {
+    "id": "kb-033", "category": "progress",
+    "title": "Lesson Completion Criteria",
+    "content": "A lesson is marked complete when the learner watches at least 90 percent of the video or reads all sections of a reading. Simply opening a lesson does not count as completion.",
+    "tags": ["lesson", "completion", "criteria"]
+  },
+  {
+    "id": "kb-034", "category": "progress",
+    "title": "Module Completion Criteria",
+    "content": "A module is marked complete when all its lessons are completed and any required quizzes are submitted. Optional exercises do not block module completion.",
+    "tags": ["module", "completion", "unlock"]
+  },
+  {
+    "id": "kb-035", "category": "progress",
+    "title": "Course Completion Percentage",
+    "content": "The course completion percentage is calculated as completed lessons plus submitted assessments divided by total lessons plus total assessments multiplied by 100. It is displayed on the dashboard.",
+    "tags": ["percentage", "calculation", "completion"]
+  },
+  {
+    "id": "kb-036", "category": "progress",
+    "title": "Streak and Learning Goals",
+    "content": "Learners can set daily or weekly learning goals such as 30 minutes per day. The platform tracks learning streaks and sends reminders if goals are missed.",
+    "tags": ["streak", "goal", "reminder", "habit"]
+  },
+  {
+    "id": "kb-037", "category": "progress",
+    "title": "Activity Log",
+    "content": "The Activity Log shows a history of lessons watched, quizzes taken, and assignments submitted with timestamps. It is accessible from the Profile Activity section.",
+    "tags": ["activity", "log", "history"]
+  },
+  {
+    "id": "kb-038", "category": "progress",
+    "title": "Certificates vs Progress",
+    "content": "Progress reflects content consumption while certificates reflect assessment performance. A learner can have 100 percent progress but still need to pass the final exam to earn a certificate.",
+    "tags": ["certificate", "progress", "difference"]
+  },
+  {
+    "id": "kb-039", "category": "progress",
+    "title": "Progress Reset Policy",
+    "content": "Progress cannot be manually reset by learners. If a course is significantly updated the platform may prompt learners to revisit new content without erasing prior progress.",
+    "tags": ["reset", "update", "content change"]
+  },
+  {
+    "id": "kb-040", "category": "progress",
+    "title": "Mobile Progress Sync",
+    "content": "Progress syncs across all devices in real time. Lessons completed on the mobile app are reflected immediately on the web dashboard and vice versa.",
+    "tags": ["mobile", "sync", "cross-device"]
+  },
+  {
+    "id": "kb-041", "category": "course",
+    "title": "Course Withdrawal and Refund",
+    "content": "Learners can withdraw from a course within 7 days of enrollment for a full refund if less than 20 percent of the course has been completed. After that no refunds are issued.",
+    "tags": ["refund", "withdrawal", "policy"]
+  },
+  {
+    "id": "kb-042", "category": "course",
+    "title": "Language and Subtitle Options",
+    "content": "Courses are offered primarily in English. Many courses include subtitles in Spanish, French, Hindi, and Mandarin. Subtitle language can be toggled in the video player settings.",
+    "tags": ["language", "subtitle", "accessibility"]
+  },
+  {
+    "id": "kb-043", "category": "assessment",
+    "title": "Feedback on Assessments",
+    "content": "After submitting a quiz or assignment learners receive automated feedback on incorrect answers explaining why an answer is wrong conceptually without revealing correct answers directly.",
+    "tags": ["feedback", "wrong answer", "explanation"]
+  },
+  {
+    "id": "kb-044", "category": "certification",
+    "title": "Employer Partnership Certificates",
+    "content": "Some certifications are co-branded with hiring partners. Completing these courses adds learners to a talent pool reviewed by partner companies for job opportunities.",
+    "tags": ["employer", "hiring", "partnership", "job"]
+  },
+  {
+    "id": "kb-045", "category": "progress",
+    "title": "Instructor Gradebook",
+    "content": "In instructor-led courses instructors can view each learner's grades, submission status, and overall progress via the Gradebook panel in their instructor dashboard.",
+    "tags": ["gradebook", "instructor", "view"]
+  },
+  {
+    "id": "kb-046", "category": "course",
+    "title": "Bookmarking and Notes",
+    "content": "Learners can bookmark any video timestamp or reading section and add personal notes. All bookmarks and notes are saved to the My Notes section of the profile.",
+    "tags": ["bookmark", "notes", "study"]
+  },
+  {
+    "id": "kb-047", "category": "assessment",
+    "title": "Assignment Plagiarism Check",
+    "content": "All submitted assignments are scanned by a plagiarism detection system. If plagiarism is detected above 20 percent the submission is flagged for instructor review and may be rejected.",
+    "tags": ["plagiarism", "assignment", "detection"]
+  },
+  {
+    "id": "kb-048", "category": "certification",
+    "title": "Certificate Name Correction",
+    "content": "The name on your certificate is taken from your profile. To correct a name on an already-issued certificate update your profile and submit a certificate reissuance request via support.",
+    "tags": ["name", "correction", "certificate reissue"]
+  },
+  {
+    "id": "kb-049", "category": "progress",
+    "title": "Completion Email Notification",
+    "content": "When a learner completes all modules and assessments an automatic congratulatory email is sent with a course completion summary and a link to download the certificate.",
+    "tags": ["email", "notification", "completion"]
+  },
+  {
+    "id": "kb-050", "category": "course",
+    "title": "Technical Support and Help Desk",
+    "content": "For technical issues such as video not loading, portal errors, or login problems learners can contact the Help Desk via live chat from 9am to 6pm or submit a support ticket. Response time is within 24 hours.",
+    "tags": ["support", "help desk", "technical issue"]
+  }
+]
