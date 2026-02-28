@@ -39,7 +39,7 @@ Remember: You explain HOW the platform works — you do NOT solve academic conte
 # PROMPT CONFIGURATION PARAMS
 # ─────────────────────────────────────────────
 PROMPT_CONFIG = {
-    "model": "gemini-2.0-flash",           # LLM Selection: Gemini Flash (fast, efficient)
+    "model": "gemini-1.5-flash",           # LLM Selection: Gemini Flash (fast, efficient)
     "temperature": 0.3,                      # Low temp = consistent, factual answers
     "top_p": 0.85,                           # Nucleus sampling
     "top_k": 40,                             # Top-K sampling
