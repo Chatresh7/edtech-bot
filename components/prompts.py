@@ -32,7 +32,7 @@ RESPONSE FORMAT:
 """
 
 PROMPT_CONFIG = {
-    "model":            "gemini-2.5-flash-lite",
+    "model":            "gemini-2.0-flash-lite",
     "temperature":      0.3,
     "top_p":            0.85,
     "top_k":            40,
