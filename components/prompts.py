@@ -1,140 +1,121 @@
 """
 prompts.py - Prompt Configuration and Builder
-All system prompt rules, templates, and prompt construction live here.
+Uses ALL top-k chunks + full conversation history for context.
 """
 
 from typing import List
 from components.retriever import RetrievedChunk
 
-# ─────────────────────────────────────────────
-# SYSTEM PROMPT
-# ─────────────────────────────────────────────
 SYSTEM_PROMPT = """You are EduBot, a helpful AI assistant for an EdTech online learning platform.
 
 YOUR ROLE:
-- Explain how the platform works: course structure, navigation, enrollment, progress tracking, assessment formats, and certification workflows.
-- Help learners understand policies and procedures clearly and concisely.
-- Be friendly, structured, and easy to understand.
+- Explain how the platform works: courses, assessments, certifications, and progress tracking.
+- Help learners understand platform policies and workflows clearly.
+- Be friendly, structured, and concise.
 
-STRICT RULES — YOU MUST ALWAYS FOLLOW THESE:
-1. NEVER provide answers to quizzes, exams, assignments, or any assessment questions.
-2. NEVER solve, complete, or fill in any question, MCQ, blank, or problem.
-3. If a user asks you to answer a question or solve an exam problem, politely decline and redirect.
-4. Use ALL the CONTEXT chunks provided below to construct a comprehensive answer.
-5. If multiple context chunks are relevant, synthesize information from ALL of them.
-6. If the context does not contain enough information, ask the user a clarifying question.
-7. Keep responses structured using bullet points or numbered steps when explaining workflows.
-8. Always be encouraging and supportive in tone.
-9. If unsure whether the user is asking about quizzes or final exams, ask for clarification.
-
-IMPORTANT - CONTEXT USAGE:
-- You are given multiple knowledge base chunks ranked by relevance.
-- Use information from ALL relevant chunks to give a complete answer.
-- If chunks cover different aspects of the topic, combine them into one coherent response.
-- Do NOT ignore lower-ranked chunks if they contain useful supplementary information.
+STRICT RULES:
+1. NEVER provide answers to quizzes, exams, assignments, or assessment questions.
+2. NEVER solve, complete, or fill in any academic question or problem.
+3. Use ALL the context chunks provided to give a comprehensive, accurate answer.
+4. Synthesize information from multiple chunks when they cover different aspects.
+5. If context is insufficient, ask a clarifying question rather than guessing.
+6. Maintain conversation continuity — refer to previous turns when relevant.
+7. Use bullet points or numbered steps for processes and workflows.
+8. Be encouraging and supportive in tone.
 
 RESPONSE FORMAT:
-- Lead with a direct, clear answer.
-- Use bullet points or numbered steps for processes and workflows.
-- Reference specific platform features by name when mentioned in context.
-- End with a helpful follow-up offer.
-- Keep responses thorough but concise (under 400 words unless complex workflow needed).
-
-Remember: You explain HOW the platform works — you do NOT solve academic content.
+- Start with a direct answer to the question.
+- Use structured formatting (bullets/numbers) for multi-step processes.
+- Combine information from all relevant chunks into one coherent answer.
+- End with an offer to clarify or help further.
+- Target length: 150-400 words (longer only for complex workflows).
 """
 
-# ─────────────────────────────────────────────
-# PROMPT CONFIGURATION PARAMS
-# ─────────────────────────────────────────────
 PROMPT_CONFIG = {
-    "model": "gemini-2.0-flash-lite",      # LLM Selection
-    "temperature": 0.3,                     # Low = consistent, factual
-    "top_p": 0.85,
-    "top_k": 40,
-    "max_output_tokens": 600,              # Slightly more for richer answers
-    "candidate_count": 1,
-    "stop_sequences": ["User:", "Human:"],
+    "model":            "gemini-2.0-flash-lite",
+    "temperature":      0.3,
+    "top_p":            0.85,
+    "top_k":            40,
+    "max_output_tokens": 700,
+    "candidate_count":  1,
+    "stop_sequences":   ["User:", "Human:"],
 }
 
-# Confidence threshold — below this score → ask clarification
-CONFIDENCE_THRESHOLD = 0.20  # Lowered so more queries get answered
+CONFIDENCE_THRESHOLD = 0.20
 
 LOW_CONFIDENCE_RESPONSE = (
-    "I want to make sure I give you the most accurate answer. "
-    "Could you clarify — are you asking about:\n"
-    "- **Quizzes** (short graded tests within modules)\n"
-    "- **Assignments** (submitted project work)\n"
-    "- **Final Exams** (end-of-course certification exams)\n"
-    "- **Progress Tracking** (dashboard and completion metrics)\n\n"
-    "That will help me explain the right process for you!"
+    "I want to give you the most accurate answer. Could you clarify what you're looking for?\n\n"
+    "Are you asking about:\n"
+    "- 📚 **Course structure** (modules, lessons, enrollment)\n"
+    "- 📝 **Assessments** (quizzes, assignments, exams)\n"
+    "- 🏅 **Certification** (how to earn and verify certificates)\n"
+    "- 📊 **Progress tracking** (dashboard, completion, analytics)\n\n"
+    "Please rephrase and I'll help right away!"
 )
 
 
 def build_prompt(
-    user_query: str,
+    user_query:       str,
     retrieved_chunks: List[RetrievedChunk],
-    chat_history: List[dict],
-    intent: str
+    chat_history:     List[dict],
+    intent:           str,
+    top_k:            int = 4
 ) -> List[dict]:
     """
-    Builds the messages list for the Gemini API call.
-    Uses ALL retrieved chunks to build comprehensive context.
+    Builds the Gemini messages list.
+    - Uses ALL retrieved_chunks (exactly top_k of them)
+    - Includes last 6 turns of conversation for continuity
+    - Converts 'assistant' role to 'model' for Gemini API
     """
 
-    # Build RAG context block — use ALL chunks, numbered for clarity
+    # ── Build RAG context from ALL chunks ──
     if retrieved_chunks:
-        context_sections = []
+        chunk_sections = []
         for i, chunk in enumerate(retrieved_chunks, 1):
-            context_sections.append(
-                f"[CHUNK {i} | Category: {chunk.category.upper()} | Title: {chunk.title} | Relevance: {chunk.score:.3f}]\n"
+            chunk_sections.append(
+                f"[CHUNK {i}/{len(retrieved_chunks)} | "
+                f"Category: {chunk.category.upper()} | "
+                f"Title: {chunk.title} | "
+                f"Relevance: {chunk.score:.3f}]\n"
                 f"{chunk.content}"
             )
-        context_text = "\n\n---\n\n".join(context_sections)
-        chunk_count = len(retrieved_chunks)
+        context_block = "\n\n---\n\n".join(chunk_sections)
     else:
-        context_text = "No specific context found in knowledge base."
-        chunk_count = 0
+        context_block = "No relevant knowledge base articles found for this query."
 
-    # Build augmented user message with all chunks
-    augmented_user_message = f"""KNOWLEDGE BASE CONTEXT ({chunk_count} chunks retrieved, ranked by relevance):
-================================================================================
-{context_text}
-================================================================================
+    # ── Build augmented user message ──
+    augmented_message = (
+        f"KNOWLEDGE BASE CONTEXT — {len(retrieved_chunks)} chunks retrieved (Top-K={top_k}):\n"
+        f"{'='*70}\n"
+        f"{context_block}\n"
+        f"{'='*70}\n\n"
+        f"USER QUESTION: {user_query}\n\n"
+        f"INSTRUCTIONS:\n"
+        f"- Synthesize ALL {len(retrieved_chunks)} chunks above into one complete answer.\n"
+        f"- If chunks cover different aspects of the topic, combine them.\n"
+        f"- Be specific — reference platform feature names mentioned in chunks.\n"
+        f"- NEVER provide assessment answers or solve academic questions.\n"
+        f"- Maintain context from the conversation history below."
+    )
 
-USER QUESTION: {user_query}
+    # ── Build messages list with conversation history ──
+    # Keep last 6 turns (= 12 messages: 6 user + 6 assistant)
+    # Exclude the very last user message (we'll add the augmented version instead)
+    history_for_context = chat_history[:-1]   # remove last user msg
+    recent_history = history_for_context[-12:] if len(history_for_context) > 12 else history_for_context
 
-INSTRUCTIONS:
-- Synthesize information from ALL {chunk_count} chunks above to give a complete answer.
-- If multiple chunks cover different aspects, combine them coherently.
-- Be specific and reference actual platform features mentioned in the context.
-- Do NOT reveal assessment answers or solve exam questions under any circumstances."""
-
-    # Keep last 6 messages of history (3 turns)
-    recent_history = chat_history[-6:] if len(chat_history) > 6 else chat_history
-
-    # Build messages for Gemini (role must be 'user' or 'model')
     messages = []
     for turn in recent_history:
-        role = turn["role"]
-        if role == "assistant":
-            role = "model"
-        messages.append({
-            "role": role,
-            "parts": [turn["content"]]
-        })
+        role = "model" if turn["role"] == "assistant" else "user"
+        messages.append({"role": role, "parts": [turn["content"]]})
 
-    # Add current augmented message
-    messages.append({
-        "role": "user",
-        "parts": [augmented_user_message]
-    })
+    # Add current augmented query
+    messages.append({"role": "user", "parts": [augmented_message]})
 
     return messages
 
 
 def should_ask_clarification(chunks: List[RetrievedChunk]) -> bool:
-    """Returns True only if ALL chunks have very low confidence."""
     if not chunks:
         return True
-    # Only ask clarification if best chunk score is very low
     return chunks[0].score < CONFIDENCE_THRESHOLD

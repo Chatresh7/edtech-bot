@@ -1,6 +1,6 @@
 """
 gemini.py - Gemini Flash API Integration
-Handles API calls, response validation, and post-response safety checks.
+Handles API calls, role conversion, response validation.
 """
 
 import os
@@ -9,101 +9,90 @@ import time
 import google.generativeai as genai
 from components.prompts import SYSTEM_PROMPT, PROMPT_CONFIG
 
-# ─────────────────────────────────────────────
-# LLM Configuration
-# ─────────────────────────────────────────────
-# Model Selection: gemini-2.0-flash
-# Rationale: Fast (<2s), cost-efficient, supports long context, ideal for FAQ/workflow bots
-LLM_MODEL = "gemini-2.5-flash-lite"
+LLM_MODEL = PROMPT_CONFIG["model"]
 
-# Patterns that would indicate answer leakage in the response
 ANSWER_LEAKAGE_PATTERNS = [
     r"\bthe (correct|right) answer is\b",
     r"\boption [a-d] is correct\b",
     r"\banswer[:=]\s*[a-d]\b",
-    r"\b(question \d+)[:=]",
     r"\bthe solution is\b",
+    r"\bcorrect option is\b",
 ]
 
-LEAKAGE_BLOCK_RESPONSE = (
-    "I noticed my response might have included assessment-specific information "
-    "that I should not share. I've blocked that response to maintain academic integrity.\n\n"
-    "I can still help you understand **how assessments work** on our platform. "
-    "Would you like me to explain the assessment format or grading policy instead?"
+LEAKAGE_BLOCK = (
+    "I noticed my response may have included assessment-specific content I should not share.\n\n"
+    "I can explain **how assessments work** on the platform instead. "
+    "Would you like me to explain the assessment format or grading policy?"
 )
 
 
 def init_gemini():
-    """Initialize Gemini with API key from environment."""
     api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
     if not api_key:
         raise ValueError(
-            "GEMINI_API_KEY not found. Please set it in your environment variables or .env file.\n"
-            "Get your key from: https://aistudio.google.com/app/apikey"
+            "GEMINI_API_KEY not found. Set it in Streamlit Secrets or your .env file.\n"
+            "Get your key at: https://aistudio.google.com/app/apikey"
         )
     genai.configure(api_key=api_key)
 
 
-def get_gemini_model():
-    """Returns a configured GenerativeModel instance."""
-    generation_config = genai.GenerationConfig(
-        temperature=PROMPT_CONFIG["temperature"],
-        top_p=PROMPT_CONFIG["top_p"],
-        top_k=PROMPT_CONFIG["top_k"],
-        max_output_tokens=PROMPT_CONFIG["max_output_tokens"],
-        candidate_count=PROMPT_CONFIG["candidate_count"],
-        stop_sequences=PROMPT_CONFIG["stop_sequences"],
+def get_model():
+    config = genai.GenerationConfig(
+        temperature      = PROMPT_CONFIG["temperature"],
+        top_p            = PROMPT_CONFIG["top_p"],
+        top_k            = PROMPT_CONFIG["top_k"],
+        max_output_tokens= PROMPT_CONFIG["max_output_tokens"],
+        candidate_count  = PROMPT_CONFIG["candidate_count"],
+        stop_sequences   = PROMPT_CONFIG["stop_sequences"],
     )
-    model = genai.GenerativeModel(
-        model_name=LLM_MODEL,
-        generation_config=generation_config,
-        system_instruction=SYSTEM_PROMPT
+    return genai.GenerativeModel(
+        model_name        = LLM_MODEL,
+        generation_config = config,
+        system_instruction= SYSTEM_PROMPT
     )
-    return model
 
 
-def validate_response(response_text: str) -> tuple[bool, str]:
-    """
-    Post-response validation: checks for answer leakage.
-    Returns (is_safe: bool, response_or_block_message: str)
-    """
-    text_lower = response_text.lower()
+def validate_response(text: str):
+    """Post-response safety check for answer leakage."""
+    lower = text.lower()
     for pattern in ANSWER_LEAKAGE_PATTERNS:
-        if re.search(pattern, text_lower):
-            return False, LEAKAGE_BLOCK_RESPONSE
-    return True, response_text
+        if re.search(pattern, lower):
+            return False, LEAKAGE_BLOCK
+    return True, text
 
 
-def call_gemini(messages: list, retry: int = 2) -> tuple[str, float]:
-    model = get_gemini_model()
+def call_gemini(messages: list, retries: int = 2):
+    """
+    Calls Gemini API.
+    - Converts 'assistant' → 'model' for Gemini compatibility
+    - Sends full conversation history for continuity
+    - Returns (response_text, latency_seconds)
+    """
+    model = get_model()
 
-    # Fix roles: Gemini uses 'user' and 'model' (not 'assistant')
-    fixed_messages = []
+    # Fix roles: Gemini uses 'user' and 'model' (NOT 'assistant')
+    fixed = []
     for msg in messages:
-        role = msg["role"]
-        if role == "assistant":
-            role = "model"
-        fixed_messages.append({
-            "role": role,
-            "parts": msg["parts"]
-        })
+        role = "model" if msg["role"] == "assistant" else msg["role"]
+        fixed.append({"role": role, "parts": msg["parts"]})
 
-    history = fixed_messages[:-1]
-    last_message = fixed_messages[-1]["parts"][0]
+    # Split into history (all but last) and current message
+    history      = fixed[:-1]
+    last_message = fixed[-1]["parts"][0]
 
-    for attempt in range(retry + 1):
+    for attempt in range(retries + 1):
         try:
-            start = time.time()
-            chat = model.start_chat(history=history)
+            t0       = time.time()
+            chat     = model.start_chat(history=history)
             response = chat.send_message(last_message)
-            latency = time.time() - start
-            raw_text = response.text
+            latency  = time.time() - t0
 
-            is_safe, final_text = validate_response(raw_text)
+            _, final_text = validate_response(response.text)
             return final_text, latency
 
         except Exception as e:
-            if attempt < retry and "429" in str(e):
-                time.sleep(2 ** attempt)
+            err_str = str(e)
+            if attempt < retries and ("429" in err_str or "500" in err_str):
+                time.sleep(2 ** attempt)   # exponential backoff
                 continue
             raise e
