@@ -14,7 +14,7 @@ from components.prompts import SYSTEM_PROMPT, PROMPT_CONFIG
 # ─────────────────────────────────────────────
 # Model Selection: gemini-2.0-flash
 # Rationale: Fast (<2s), cost-efficient, supports long context, ideal for FAQ/workflow bots
-LLM_MODEL = "gemini-2.0-flash-lite"
+LLM_MODEL = "gemini-2.5-flash-lite"
 
 # Patterns that would indicate answer leakage in the response
 ANSWER_LEAKAGE_PATTERNS = [
