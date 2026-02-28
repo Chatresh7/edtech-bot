@@ -38,5 +38,8 @@ def log_interaction(
         "safety_triggered": safety_triggered,
         "response_preview_length": len(response_preview)
     }
-    with open(LOG_PATH, "a") as f:
-        f.write(json.dumps(entry) + "\n")
+    try:
+        with open(LOG_PATH, "a") as f:
+            f.write(json.dumps(entry) + "\n")
+    except Exception:
+        pass

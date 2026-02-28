@@ -244,8 +244,9 @@ if active_query:
 
     # Rate limit
     if not check_rate_limit():
+        wait_time = int(RATE_WINDOW - (time.time() - st.session_state.last_reset))
         with st.chat_message("assistant"):
-            st.warning("⏳ Rate limit reached (10/min). Please wait.")
+            st.warning(f"⏳ Rate limit reached (10 requests/min). Try again in **{wait_time} seconds**.")
         st.stop()
 
     safety_triggered = is_blocked(query)

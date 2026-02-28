@@ -72,7 +72,7 @@ streamlit run app.py
 | Assessment      | 12    | Quiz types, grading, attempts, plagiarism, proctoring|
 | Certification   | 10    | Eligibility, issuance, sharing, verification, renewal|
 | Progress        | 10    | Dashboard, completion, sync, streaks, activity log  |
-| **Total**       | **50**|                                                     |
+| **Total**       | **100**|                                                     |
 
 ---
 
